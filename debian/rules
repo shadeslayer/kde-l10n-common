@@ -1,0 +1,30 @@
+#!/usr/bin/make -f
+
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/pkg-kde-tools/makefiles/1/cdbs/kde.mk
+
+LANGCODE=de
+#take translations from stable branch to match our KDE 4.3 version
+SVNREV={2009-11-01}
+
+clean::
+	echo "*** Did you remember to refresh desktop translations with `make -f debian/rules get-desktop`? ***"
+
+get-desktop:
+	cd messages; \
+		for module in kde*; do \
+			cd $${module}; \
+			svn export -r${SVNREV} svn://anonsvn.kde.org/home/kde/branches/stable/l10n-kde4/$(LANGCODE)/messages/$${module}/desktop_$${module}.po; \
+			cd ..; \
+		done; \
+	cd ../..;
+
+	cp messages/kdebase/desktop_kdebase.po messages/kdebase/desktop_kdebase-runtime.po 
+	cp messages/kdebase/desktop_kdebase.po messages/kdebase/desktop_kdebase-workspace.po 
+	cp messages/kdebase/desktop_kdepim.po messages/kdebase/desktop_kdepim-runtime.po 
+
+	cd messages/kdelibs; \
+		for file in `cat /usr/lib/kubuntu-desktop-i18n/desktop-template-list`; do \
+			svn export -r${SVNREV} svn://anonsvn.kde.org/home/kde/branches/stable/l10n-kde4/$(LANGCODE)/messages/$${file}.po; \
+		done; \
+	cd ../..;

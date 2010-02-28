@@ -1,0 +1,17 @@
+Source: kde-l10n-de
+Section: kde
+Priority: optional
+Maintainer: Ubuntu MOTU Developers <ubuntu-motu@lists.ubuntu.com>
+XSBC-Original-Maintainer: Jonathan Riddell <jriddell@ubuntu.com>
+Build-Depends: debhelper (>= 5), cdbs, quilt, cmake, bzip2, kdelibs5-dev (>= 4:4.2.1-0ubuntu1)
+Standards-Version: 3.8.0
+Homepage: http://l10n.kde.org/
+
+Package: kde-l10n-de
+Architecture: all
+Section: kde
+Depends: kdelibs5 (>= 4:4.2.1-0ubuntu1), language-pack-kde-de
+Replaces: kde-i18n-de
+Description: German (de) localisation files for KDE4
+ This package contains the German translation files for all KDE 4 core 
+ applications.
