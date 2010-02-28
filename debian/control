@@ -3,7 +3,9 @@ Section: kde
 Priority: optional
 Maintainer: Ubuntu MOTU Developers <ubuntu-motu@lists.ubuntu.com>
 XSBC-Original-Maintainer: Jonathan Riddell <jriddell@ubuntu.com>
-Build-Depends: debhelper (>= 5), cdbs, quilt, cmake, bzip2, kdelibs5-dev (>= 4:4.2.1-0ubuntu1)
+Build-Depends: debhelper (>= 7.4.13),
+                 pkg-kde-tools (>= 0.5.3),
+                 kdelibs5-dev (>= 4:4.4.0)
 Standards-Version: 3.8.4
 Homepage: http://l10n.kde.org/team-infos.php?teamcode=###KDELANGCODE###
 
