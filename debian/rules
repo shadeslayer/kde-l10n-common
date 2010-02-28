@@ -3,7 +3,7 @@
 include /usr/share/cdbs/1/rules/debhelper.mk
 include /usr/share/pkg-kde-tools/makefiles/1/cdbs/kde.mk
 
-LANGCODE=de
+LANGCODE=###KDELANGCODE###
 #take translations from stable branch to match our KDE 4.3 version
 SVNREV={2009-11-01}
 
