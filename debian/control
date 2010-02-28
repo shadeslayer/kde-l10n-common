@@ -12,6 +12,6 @@ Architecture: all
 Section: kde
 Depends: kdelibs5 (>= 4:4.2.1-0ubuntu1), language-pack-kde-###UBUNTULANGCODE###
 Replaces: kde-i18n-###KDELANGCODE###
-Description: German (de) localisation files for KDE4
- This package contains the German translation files for all KDE 4 core 
- applications.
+Description: ###KDELANGNAME### (###KDELANGCODE###) localisation files for KDE
+ This package contains the translation files for all KDE core applications for
+ the language "###KDELANGNAME###".
