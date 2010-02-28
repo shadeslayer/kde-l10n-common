@@ -9,7 +9,6 @@ Homepage: http://l10n.kde.org/
 
 Package: kde-l10n-###KDELANG_CODE###
 Architecture: all
-Section: kde
 Depends: kdelibs5 (>= 4:4.2.1-0ubuntu1), language-pack-kde-###UBUNTULANGCODE###
 Replaces: kde-i18n-###KDELANGCODE###
 Description: ###KDELANGNAME### (###KDELANGCODE###) localisation files for KDE
