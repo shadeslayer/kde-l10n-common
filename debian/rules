@@ -5,8 +5,8 @@
 	dh --with kde --with quilt $@
 
 LANGCODE=aaaKDELANGCODEbbb
-#take translations from stable branch to match our KDE 4.3 version
-SVNREV={2009-11-01}
+#take translations from stable branch to match our KDE 4.4.1 version
+SVNREV={2010-02-27}
 
 clean::
 	echo "*** Did you remember to refresh desktop translations with `make -f debian/rules get-desktop`? ***"
