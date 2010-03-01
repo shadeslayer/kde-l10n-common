@@ -5,14 +5,14 @@ Priority: optional
 Maintainer: Kubuntu Developers <kubuntu-devel@lists.ubuntu.com>
 Build-Depends: debhelper (>= 7.4.13),
                pkg-kde-tools (>= 0.5.3),
-               kdelibs5-dev (>= 4:4.4.0)
+               kdelibs5-dev (>= 4:4.4.1)
 Standards-Version: 3.8.4
 Homepage: http://l10n.kde.org/team-infos.php?teamcode=aaaKDELANGCODEbbb
 
 Package: kde-l10n-aaaKDELANGCODEbbb
 Architecture: all
-Depends: kdelibs5 (>= 4:4.2.1-0ubuntu1),
-          language-pack-kde-aaaUBUNTULANGCODEbbb
+Depends: kdelibs5 (>= 4:4.4.1),
+         language-pack-kde-aaaUBUNTULANGCODEbbb
 Replaces: kde-i18n-aaaKDELANGCODEbbb
 Description: aaaKDELANGNAMEbbb (aaaKDELANGCODEbbb) localisation files for KDE
  This package contains the translation files for all KDE core applications for
