@@ -4,8 +4,8 @@ Section: kde
 Priority: optional
 Maintainer: Kubuntu Developers <kubuntu-devel@lists.ubuntu.com>
 Build-Depends: debhelper (>= 7.4.13),
-                 pkg-kde-tools (>= 0.5.3),
-                 kdelibs5-dev (>= 4:4.4.0)
+               pkg-kde-tools (>= 0.5.3),
+               kdelibs5-dev (>= 4:4.4.0)
 Standards-Version: 3.8.4
 Homepage: http://l10n.kde.org/team-infos.php?teamcode=aaaKDELANGCODEbbb
 
