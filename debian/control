@@ -1,18 +1,19 @@
-Source: kde-l10n-###KDELANGCODE###
+###BOILERPLATE###
+Source: kde-l10n-aaaKDELANGCODEbbb
 Section: kde
 Priority: optional
-Maintainer: Ubuntu MOTU Developers <ubuntu-motu@lists.ubuntu.com>
-XSBC-Original-Maintainer: Jonathan Riddell <jriddell@ubuntu.com>
+Maintainer: Kubuntu Developers <kubuntu-devel@lists.ubuntu.com>
 Build-Depends: debhelper (>= 7.4.13),
                  pkg-kde-tools (>= 0.5.3),
                  kdelibs5-dev (>= 4:4.4.0)
 Standards-Version: 3.8.4
-Homepage: http://l10n.kde.org/team-infos.php?teamcode=###KDELANGCODE###
+Homepage: http://l10n.kde.org/team-infos.php?teamcode=aaaKDELANGCODEbbb
 
-Package: kde-l10n-###KDELANG_CODE###
+Package: kde-l10n-aaaKDELANGCODEbbb
 Architecture: all
-Depends: kdelibs5 (>= 4:4.2.1-0ubuntu1), language-pack-kde-###UBUNTULANGCODE###
-Replaces: kde-i18n-###KDELANGCODE###
-Description: ###KDELANGNAME### (###KDELANGCODE###) localisation files for KDE
+Depends: kdelibs5 (>= 4:4.2.1-0ubuntu1),
+          language-pack-kde-###UBUNTULANGCODE###
+Replaces: kde-i18n-aaaKDELANGCODEbbb
+Description: aaaKDELANGNAMEbbb (aaaKDELANGCODEbbb) localisation files for KDE
  This package contains the translation files for all KDE core applications for
- the language "###KDELANGNAME###".
+ the language "aaaKDELANGNAMEbbb".

@@ -1,16 +1,16 @@
-kde-l10n-###KDELANGCODE### (4:4.4.0-0ubuntu1) lucid; urgency=low
+kde-l10n-aaaKDELANGCODEbbb (4:4.4.0-0ubuntu1) lucid; urgency=low
 
   * New upstream release
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 09 Feb 2010 23:10:05 +0000
 
-kde-l10n-###KDELANGCODE### (4:4.3.95-0ubuntu1) lucid; urgency=low
+kde-l10n-aaaKDELANGCODEbbb (4:4.3.95-0ubuntu1) lucid; urgency=low
 
   * New upstream RC release
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 22 Jan 2010 12:26:05 +0000
 
-kde-l10n-###KDELANGCODE### (4:4.3.90-0ubuntu1) lucid; urgency=low
+kde-l10n-aaaKDELANGCODEbbb (4:4.3.90-0ubuntu1) lucid; urgency=low
 
   * New upstream RC release
   * Replace old kde-i18n package
@@ -18,82 +18,82 @@ kde-l10n-###KDELANGCODE### (4:4.3.90-0ubuntu1) lucid; urgency=low
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 07 Jan 2010 16:22:40 +0000
 
-kde-l10n-###KDELANGCODE### (4:4.3.85-0ubuntu1) lucid; urgency=low
+kde-l10n-aaaKDELANGCODEbbb (4:4.3.85-0ubuntu1) lucid; urgency=low
 
   * New upstream release
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 21 Dec 2009 18:54:47 +0000
 
-kde-l10n-###KDELANGCODE### (4:4.3.2-0ubuntu1) karmic; urgency=low
+kde-l10n-aaaKDELANGCODEbbb (4:4.3.2-0ubuntu1) karmic; urgency=low
 
   * New upstream release
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 05 Oct 2009 15:35:17 +0100
 
-kde-l10n-###KDELANGCODE### (4:4.3.1-0ubuntu1) karmic; urgency=low
+kde-l10n-aaaKDELANGCODEbbb (4:4.3.1-0ubuntu1) karmic; urgency=low
 
   * New upstream release
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 01 Sep 2009 12:01:47 +0100
 
-kde-l10n-###KDELANGCODE### (4:4.3.0-0ubuntu1) karmic; urgency=low
+kde-l10n-aaaKDELANGCODEbbb (4:4.3.0-0ubuntu1) karmic; urgency=low
 
   * New upstream release
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 03 Aug 2009 15:28:14 +0000
 
-kde-l10n-###KDELANGCODE### (4:4.2.98-0ubuntu1) karmic; urgency=low
+kde-l10n-aaaKDELANGCODEbbb (4:4.2.98-0ubuntu1) karmic; urgency=low
 
   * New upstream release
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 23 Jul 2009 21:49:44 +0100
 
-kde-l10n-###KDELANGCODE### (4:4.2.96-0ubuntu1) karmic; urgency=low
+kde-l10n-aaaKDELANGCODEbbb (4:4.2.96-0ubuntu1) karmic; urgency=low
 
   * New upstream release
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 15 Jul 2009 12:46:37 +0100
 
-kde-l10n-###KDELANGCODE### (4:4.2.2-0ubuntu3) jaunty; urgency=low
+kde-l10n-aaaKDELANGCODEbbb (4:4.2.2-0ubuntu3) jaunty; urgency=low
 
   * Update rules to download desktop file translations
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 15 Apr 2009 18:09:39 +0100
 
-kde-l10n-###KDELANGCODE### (4:4.2.2-0ubuntu2) jaunty; urgency=low
+kde-l10n-aaaKDELANGCODEbbb (4:4.2.2-0ubuntu2) jaunty; urgency=low
 
   * Fix debian/rules to use KDE 4 l10n (LP: #355814)
 
  -- Harald Sitter <apachelogger@ubuntu.com>  Tue, 07 Apr 2009 11:46:36 +0200
 
-kde-l10n-###KDELANGCODE### (4:4.2.2-0ubuntu1) jaunty; urgency=low
+kde-l10n-aaaKDELANGCODEbbb (4:4.2.2-0ubuntu1) jaunty; urgency=low
 
   * New upstream release
   * Bump version requirements of kdelibs5(-dev) to 4:4.2.2-0ubuntu1
 
  -- Steve Stalcup <vorian@ubuntu.com>  Sun, 29 Mar 2009 17:17:44 -0400
 
-kde-l10n-###KDELANGCODE### (4:4.2.1-0ubuntu1) jaunty; urgency=low
+kde-l10n-aaaKDELANGCODEbbb (4:4.2.1-0ubuntu1) jaunty; urgency=low
 
   * New upstream release
 
  -- Steve Stalcup <vorian@ubuntu.com>  Sun, 01 Mar 2009 17:16:02 -0500
 
-kde-l10n-###KDELANGCODE### (4:4.2.0-0ubuntu1) jaunty; urgency=low
+kde-l10n-aaaKDELANGCODEbbb (4:4.2.0-0ubuntu1) jaunty; urgency=low
 
   * New upstream release
   * Bump version requirements of kdelibs5(-dev) to 4:4.2.0-0ubuntu1
 
  -- Harald Sitter <apachelogger@ubuntu.com>  Thu, 29 Jan 2009 22:40:33 +0100
 
-kde-l10n-###KDELANGCODE### (4:4.1.96-0ubuntu1) jaunty; urgency=low
+kde-l10n-aaaKDELANGCODEbbb (4:4.1.96-0ubuntu1) jaunty; urgency=low
 
   * New upstream release
   * Bump version requirements of kdelibs5(-dev) to 4:4.1.96-0ubuntu1
 
  -- Harald Sitter <apachelogger@ubuntu.com>  Sun, 18 Jan 2009 17:53:44 +0100
 
-kde-l10n-###KDELANGCODE### (4:4.1.85-0ubuntu1) jaunty; urgency=low
+kde-l10n-aaaKDELANGCODEbbb (4:4.1.85-0ubuntu1) jaunty; urgency=low
 
   * New upstream release
   * Bump Standards-Version to 3.8.0
@@ -102,69 +102,69 @@ kde-l10n-###KDELANGCODE### (4:4.1.85-0ubuntu1) jaunty; urgency=low
 
  -- Harald Sitter <apachelogger@ubuntu.com>  Mon, 22 Dec 2008 09:39:23 +0100
 
-kde-l10n-###KDELANGCODE### (4:4.1.2-0ubuntu1) intrepid; urgency=low
+kde-l10n-aaaKDELANGCODEbbb (4:4.1.2-0ubuntu1) intrepid; urgency=low
 
   * New upstream release
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 03 Oct 2008 16:49:24 +0100
 
-kde-l10n-###KDELANGCODE### (4:4.1.1-0ubuntu1) intrepid; urgency=low
+kde-l10n-aaaKDELANGCODEbbb (4:4.1.1-0ubuntu1) intrepid; urgency=low
 
   * New upstream release
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 08 Sep 2008 15:06:40 +0100
 
-kde-l10n-###KDELANGCODE### (4:4.1.0-0ubuntu1) intrepid; urgency=low
+kde-l10n-aaaKDELANGCODEbbb (4:4.1.0-0ubuntu1) intrepid; urgency=low
 
   * New upstream release
   * Bump Standards-Version to 3.8.0
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 25 Jul 2008 14:54:07 +0100
 
-kde-l10n-###KDELANGCODE### (4:4.0.98-0ubuntu1) intrepid; urgency=low
+kde-l10n-aaaKDELANGCODEbbb (4:4.0.98-0ubuntu1) intrepid; urgency=low
 
   * New upstream release
   * Bump Standards-Version to 3.8.0
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 17 Jul 2008 16:35:05 +0100
 
-kde-l10n-###KDELANGCODE### (4:4.0.83-0ubuntu1) intrepid; urgency=low
+kde-l10n-aaaKDELANGCODEbbb (4:4.0.83-0ubuntu1) intrepid; urgency=low
 
   * New upstream beta release
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 25 Jun 2008 11:02:01 +0000
 
-kde-l10n-###KDELANGCODE### (4:4.0.80-0ubuntu1) intrepid; urgency=low
+kde-l10n-aaaKDELANGCODEbbb (4:4.0.80-0ubuntu1) intrepid; urgency=low
 
   * New upstream beta release
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 04 Jun 2008 11:23:29 +0100
 
-kde-l10n-###KDELANGCODE### (4:4.0.3-0ubuntu1) hardy; urgency=low
+kde-l10n-aaaKDELANGCODEbbb (4:4.0.3-0ubuntu1) hardy; urgency=low
 
   * New upstream release
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 01 Apr 2008 14:35:52 +0100
 
-kde-l10n-###KDELANGCODE### (4:4.0.2-0ubuntu1) hardy; urgency=low
+kde-l10n-aaaKDELANGCODEbbb (4:4.0.2-0ubuntu1) hardy; urgency=low
 
   * New upstream release
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 04 Mar 2008 12:31:33 +0000
 
-kde-l10n-###KDELANGCODE### (4:4.0.1-0ubuntu1) hardy; urgency=low
+kde-l10n-aaaKDELANGCODEbbb (4:4.0.1-0ubuntu1) hardy; urgency=low
 
   * New upstream release
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 08 Feb 2008 11:11:06 +0000
 
-kde-l10n-###KDELANGCODE### (4:4.0.0-0ubuntu2) hardy; urgency=low
+kde-l10n-aaaKDELANGCODEbbb (4:4.0.0-0ubuntu2) hardy; urgency=low
 
   * Add cdbs and quilt to build-deps
 
  -- Terence Simpson <stdin@stdin.me.uk>  Thu, 10 Jan 2008 03:35:26 +0000
 
-kde-l10n-###KDELANGCODE### (4:4.0.0-0ubuntu1) hardy; urgency=low
+kde-l10n-aaaKDELANGCODEbbb (4:4.0.0-0ubuntu1) hardy; urgency=low
 
   * New upstream release, initial upload
 

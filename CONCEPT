@@ -1,3 +1,9 @@
 The idea looks like this:
 Every kde-l10n package gets build individually from a common branch, for each backage the branch gets merged with the source and a substituation occurs of language code and language name, thus making the debian/ content language specific.
 For this to work it is important that especially the language name is always placed in a way that prevents it from exceeding 80 chars/line in all scenarios.
+
+Stuff to be replaced:
+###BOILERPLATE### => note about not to change files directly
+aaaUBUNTULANGCODEbbb => ubuntu language code
+aaaKDELANGCODEbbb => kde language code
+aaaKDELANGNAMEbbb => kde language name
