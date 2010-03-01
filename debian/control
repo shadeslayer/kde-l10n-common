@@ -12,7 +12,7 @@ Homepage: http://l10n.kde.org/team-infos.php?teamcode=aaaKDELANGCODEbbb
 Package: kde-l10n-aaaKDELANGCODEbbb
 Architecture: all
 Depends: kdelibs5 (>= 4:4.2.1-0ubuntu1),
-          language-pack-kde-###UBUNTULANGCODE###
+          language-pack-kde-aaaUBUNTULANGCODEbbb
 Replaces: kde-i18n-aaaKDELANGCODEbbb
 Description: aaaKDELANGNAMEbbb (aaaKDELANGCODEbbb) localisation files for KDE
  This package contains the translation files for all KDE core applications for
