@@ -15,6 +15,6 @@ Depends: ${misc:Depends},
          kdelibs5 (>= 4:4.4.1),
          language-pack-kde-aaaUBUNTULANGCODEbbb
 Replaces: kde-i18n-aaaKDELANGCODEbbb
-Description: aaaKDELANGNAMEbbb (aaaKDELANGCODEbbb) localisation for KDE
+Description: aaaKDELANGNAMEbbb (aaaKDELANGCODEbbb) localization for KDE
  This package contains the translation files for all KDE core applications for
  the language "aaaKDELANGNAMEbbb".
