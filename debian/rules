@@ -14,9 +14,10 @@ get-desktop:
 		done; \
 	cd ../..;
 
-	cp messages/kdebase/desktop_kdebase.po messages/kdebase/desktop_kdebase-runtime.po
-	cp messages/kdebase/desktop_kdebase.po messages/kdebase/desktop_kdebase-workspace.po
-	cp messages/kdebase/desktop_kdepim.po messages/kdebase/desktop_kdepim-runtime.po
+	# I do not claim to understand this magic here, but I really think it should get a comment
+	-cp messages/kdebase/desktop_kdebase.po messages/kdebase/desktop_kdebase-runtime.po
+	-cp messages/kdebase/desktop_kdebase.po messages/kdebase/desktop_kdebase-workspace.po
+	-cp messages/kdepim/desktop_kdepim.po messages/kdepim/desktop_kdepim-runtime.po
 
 	cd messages/kdelibs; \
 		for file in `cat /usr/lib/kubuntu-desktop-i18n/desktop-template-list`; do \
