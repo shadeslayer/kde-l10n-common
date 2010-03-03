@@ -1,5 +1,5 @@
 ###BOILERPLATE###
-Source: kde-l10n-aaaKDELANGCODEbbb
+Source: kde-l10n-aaaUBUNTULANGCODEbbb
 Section: kde
 Priority: optional
 Maintainer: Kubuntu Developers <kubuntu-devel@lists.ubuntu.com>
@@ -11,12 +11,12 @@ Homepage: http://l10n.kde.org/team-infos.php?teamcode=aaaKDELANGCODEbbb
 Vcs-Browser: http://bazaar.launchpad.net/~kubuntu-members/kde-l10n-common/ubuntu
 Vcs-Bzr: https://code.launchpad.net/~kubuntu-members/kde-l10n-common/ubuntu
 
-Package: kde-l10n-aaaKDELANGCODEbbb
+Package: kde-l10n-aaaUBUNTULANGCODEbbb
 Architecture: all
 Depends: ${misc:Depends},
          kdelibs5 (>= 4:4.4.1),
          language-pack-kde-aaaUBUNTULANGCODEbbb
-Replaces: kde-i18n-aaaKDELANGCODEbbb
-Description: aaaKDELANGNAMEbbb (aaaKDELANGCODEbbb) localization for KDE
+Replaces: kde-i18n-aaaUBUNTULANGCODEbbb
+Description: aaaKDELANGNAMEbbb (aaaUBUNTULANGCODEbbb) localization for KDE
  This package contains the translation files for all KDE core applications for
  the language "aaaKDELANGNAMEbbb".
