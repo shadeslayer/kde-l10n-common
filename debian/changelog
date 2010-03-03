@@ -1,9 +1,13 @@
-kde-l10n-aaaUBUNTULANGCODEbbb (4:4.4.1a-0ubuntu1) lucid; urgency=low
+kde-l10n-aaaUBUNTULANGCODEbbb (4:4.4.1a-0ubuntu1) UNRELEASED; urgency=low
 
   * New upstream release
   * Base all kde-l10n packages on a common packaging
     + add build script debian/build-l10n.sh to fetch source from upstream and
       build source packages from that
+    + revise all files to be more auto-editable and include warnings
+      where possible, to ensure that out-of-branch edits do not happen
+  * Switch to source format 3
+    + add quilt as build-dep (get-desktop causes changes that end up as patches)
 
  -- Harald Sitter <apachelogger@ubuntu.com>  Mon, 01 Mar 2010 22:40:38 +0100
 
