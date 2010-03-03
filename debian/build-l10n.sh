@@ -35,8 +35,7 @@ mkdir build
 cd build
 WDIR=`pwd`
 
-# BRANCH="lp:~kubuntu-members/kubuntu-dev-tools/kde-l10n-common"
-BRANCH="/home/me/src/bzr/kde-l10n-common"
+BRANCH="lp:~kubuntu-members/kubuntu-dev-tools/kde-l10n-common"
 CO="common"
 BOILERPLATE="# ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! !#\n# DO NOT EVEN THINK ABOUT CHANGING THIS FILE DIRECTLY! ! ! !\n# PLEASE USE THE BZR BRANCH AS SEEN IN debian\/control\n# MAKE YOUR CHANGES THERE AND THEN RUN debian\/build-l10n.sh\n# kthxbai :)\n################################################################################\n################################################################################\n################################################################################\n################################################################################"
 
@@ -59,7 +58,7 @@ fi
 cd $WDIR
 
 cd build-area
-$GET/stable/${KDEVERSION}/src/kde-l10n/kde-l10n-c*.tar.bz2 .
+$GET/stable/${KDEVERSION}/src/kde-l10n/kde-l10n-*.tar.bz2 .
 
 for tfile in `ls kde-l10n-*.tar.bz2`; do
   cd $WDIR
