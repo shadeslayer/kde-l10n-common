@@ -1,4 +1,4 @@
-kde-l10n-aaaKDELANGCODEbbb (4:4.4.1-0ubuntu1) lucid; urgency=low
+kde-l10n-aaaKDELANGCODEbbb (4:4.4.1-0ubuntu2) lucid; urgency=low
 
   * New upstream release
   * Base all kde-l10n packages on a common packaging
@@ -6,6 +6,12 @@ kde-l10n-aaaKDELANGCODEbbb (4:4.4.1-0ubuntu1) lucid; urgency=low
       build source packages from that
 
  -- Harald Sitter <apachelogger@ubuntu.com>  Mon, 01 Mar 2010 22:40:38 +0100
+
+kde-l10n-aaaKDELANGCODEbbb (4:4.4.1-0ubuntu1) lucid; urgency=low
+
+  * New upstream release
+
+ -- Jonathan Riddell < jriddell@ubuntu.com>   Tue, 02 Mar 2010 15:45:52 +0000
 
 kde-l10n-aaaKDELANGCODEbbb (4:4.4.0-0ubuntu1) lucid; urgency=low
 

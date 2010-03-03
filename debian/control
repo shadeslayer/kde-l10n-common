@@ -8,6 +8,8 @@ Build-Depends: debhelper (>= 7.4.13),
                kdelibs5-dev (>= 4:4.4.1)
 Standards-Version: 3.8.4
 Homepage: http://l10n.kde.org/team-infos.php?teamcode=aaaKDELANGCODEbbb
+Vcs-Browser: http://bazaar.launchpad.net/~kubuntu-members/kde-l10n-common/ubuntu
+Vcs-Bzr: https://code.launchpad.net/~kubuntu-members/kde-l10n-common/ubuntu
 
 Package: kde-l10n-aaaKDELANGCODEbbb
 Architecture: all
