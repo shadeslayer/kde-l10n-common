@@ -25,20 +25,26 @@ WDIR=`pwd`
 case ${WDIR##*/} in
   "debian" )
     cd ..;;
-  "kde-l10n-common" )
+  "build" )
+    cd ..;;
+  "kubuntu-kde-l10n-common" )
     ;;
 esac
-rm -r build
+rm -rf build
 mkdir build
 cd build
 WDIR=`pwd`
 
-# BRANCH="lp:~kubuntu-members/ubuntu/kde-l10n-common"
+# BRANCH="lp:~kubuntu-members/kubuntu-dev-tools/kde-l10n-common"
 BRANCH="/home/me/src/bzr/kde-l10n-common"
 CO="common"
 BOILERPLATE="# ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! !#\n# DO NOT EVEN THINK ABOUT CHANGING THIS FILE DIRECTLY! ! ! !\n# PLEASE USE THE BZR BRANCH AS SEEN IN debian\/control\n# MAKE YOUR CHANGES THERE AND THEN RUN debian\/build-l10n.sh\n# kthxbai :)\n################################################################################\n################################################################################\n################################################################################\n################################################################################"
 
-langs=()
+if [[ `bzr revno` != `bzr revno ${BRANCH}` ]]; then
+  echo "YOU MUST PUSH TO THE PARENT BRANCH BEFORE BUILDING THE PACKAGES!!!"
+  echo "Leaving you alone in the cold."
+  exit 1
+fi
 
 mkdir build-area
 bzr branch $BRANCH $CO
