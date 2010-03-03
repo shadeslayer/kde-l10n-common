@@ -3,21 +3,21 @@
 function mapKdeCodeToUbuntu {
   case `eval "expr \"\$"$1"\" "` in
     "be@latin" )
-      ;;
+      eval "$1=\"belatin\"";;
     "ca@valencia" )
-      ;;
+      eval "$1=\"cavalencia\"";;
     "en_GB" )
       eval "$1=\"engb\"";;
     "pt_BR" )
       eval "$1=\"ptbr\"";;
     "sr@ijekavian" )
-      ;;
+      eval "$1=\"srijekavian\"";;
     "sr@ijekavianlatin" )
-      ;;
+      eval "$1=\"srijekavianlatin\"";;
     "sr@latin" )
       eval "$1=\"srlatin\"";;
     "uz@cyrillic" )
-      ;;
+      eval "$1=\"uzcyrillic\"";;
     "zh_CN" )
       eval "$1=\"zhcn\"";;
     "zh_TW" )
