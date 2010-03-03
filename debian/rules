@@ -1,9 +1,6 @@
 #!/usr/bin/make -f
 ###BOILERPLATE###
 
-%:
-	dh --with kde --with quilt $@
-
 LANGCODE=aaaKDELANGCODEbbb
 #take translations from stable branch to match our KDE 4.4.1 version
 SVNREV={2010-02-27}
@@ -17,12 +14,15 @@ get-desktop:
 		done; \
 	cd ../..;
 
-	cp messages/kdebase/desktop_kdebase.po messages/kdebase/desktop_kdebase-runtime.po 
-	cp messages/kdebase/desktop_kdebase.po messages/kdebase/desktop_kdebase-workspace.po 
-	cp messages/kdebase/desktop_kdepim.po messages/kdebase/desktop_kdepim-runtime.po 
+	cp messages/kdebase/desktop_kdebase.po messages/kdebase/desktop_kdebase-runtime.po
+	cp messages/kdebase/desktop_kdebase.po messages/kdebase/desktop_kdebase-workspace.po
+	cp messages/kdebase/desktop_kdepim.po messages/kdebase/desktop_kdepim-runtime.po
 
 	cd messages/kdelibs; \
 		for file in `cat /usr/lib/kubuntu-desktop-i18n/desktop-template-list`; do \
 			svn export -r${SVNREV} svn://anonsvn.kde.org/home/kde/branches/stable/l10n-kde4/$(LANGCODE)/messages/$${file}.po; \
 		done; \
 	cd ../..;
+
+%:
+	dh --with kde --with quilt $@
