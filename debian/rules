@@ -21,8 +21,8 @@ get-desktop:
 
 	cd messages/kdelibs; \
 		for file in `cat /usr/lib/kubuntu-desktop-i18n/desktop-template-list`; do \
-			svn export -r${SVNREV} svn://anonsvn.kde.org/home/kde/trunk/l10n-kde4/$(LANGCODE)/messages/$${file}.po; \
-# 			svn export -r${SVNREV} svn://anonsvn.kde.org/home/kde/branches/stable/l10n-kde4/$(LANGCODE)/messages/$${file}.po; \
+# 			svn export -r${SVNREV} svn://anonsvn.kde.org/home/kde/trunk/l10n-kde4/$(LANGCODE)/messages/$${file}.po; \
+			svn export -r${SVNREV} svn://anonsvn.kde.org/home/kde/branches/stable/l10n-kde4/$(LANGCODE)/messages/$${file}.po; \
 		done; \
 	cd ../..;
 

@@ -68,7 +68,7 @@ fi
 cd $WDIR
 
 cd build-area
-$GET/stable/${KDEVERSION}/src/kde-l10n/kde-l10n-*.tar.bz2 .
+$GET/stable/${KDEVERSION}/src/kde-l10n/kde-l10n-de*.tar.bz2 .
 
 for tfile in `ls kde-l10n-*.tar.bz2`; do
   cd $WDIR
