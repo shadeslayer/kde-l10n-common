@@ -1,4 +1,4 @@
-rkde-l10n-aaaUBUNTULANGCODEbbb (4:4.4.1a-0ubuntu1) UNRELEASED; urgency=low
+kde-l10n-aaaUBUNTULANGCODEbbb (4:4.4.1a-0ubuntu1) UNRELEASED; urgency=low
 
   * New upstream release
   * Base all kde-l10n packages on a common packaging
