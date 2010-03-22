@@ -68,7 +68,7 @@ fi
 cd $WDIR
 
 cd build-area
-$GET/stable/${KDEVERSION}/src/kde-l10n/kde-l10n-de*.tar.bz2 .
+$GET/stable/${KDEVERSION}/src/kde-l10n/kde-l10n-*.tar.bz2 .
 
 for tfile in `ls kde-l10n-*.tar.bz2`; do
   cd $WDIR
@@ -106,6 +106,6 @@ for tfile in `ls kde-l10n-*.tar.bz2`; do
       sed -i "s/###BOILERPLATE###/$BOILERPLATE/g" $dfile
     done
 
-    bzr-buildpackage --builder "make -f debian/rules get-desktop && dpkg-buildpackage -S -sa"
+    bzr-buildpackage -S --builder "make -f debian/rules get-desktop && dpkg-buildpackage -S -sa"
   fi
 done
