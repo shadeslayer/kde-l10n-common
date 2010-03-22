@@ -1,4 +1,4 @@
-kde-l10n-aaaUBUNTULANGCODEbbb (4:4.4.1a-0ubuntu1) UNRELEASED; urgency=low
+rkde-l10n-aaaUBUNTULANGCODEbbb (4:4.4.1a-0ubuntu1) UNRELEASED; urgency=low
 
   * New upstream release
   * Base all kde-l10n packages on a common packaging
@@ -10,6 +10,12 @@ kde-l10n-aaaUBUNTULANGCODEbbb (4:4.4.1a-0ubuntu1) UNRELEASED; urgency=low
     + add quilt as build-dep (get-desktop causes changes that end up as patches)
 
  -- Harald Sitter <apachelogger@ubuntu.com>  Mon, 01 Mar 2010 22:40:38 +0100
+
+kde-l10n-aaaUBUNTULANGCODEbbb (4:4.4.1-0ubuntu2) lucid; urgency=low
+
+  * Don't use obsolete svn revision for desktop .po files
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 02 Mar 2010 23:51:52 +0000
 
 kde-l10n-aaaUBUNTULANGCODEbbb (4:4.4.1-0ubuntu1) lucid; urgency=low
 
