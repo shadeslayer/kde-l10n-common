@@ -3,7 +3,7 @@
 
 LANGCODE=aaaKDELANGCODEbbb
 #take translations from stable branch to match our KDE 4.4.1 version
-SVNREV={2010-02-27}
+SVNREV={2010-03-26}
 
 get-desktop:
 	cd messages; \
