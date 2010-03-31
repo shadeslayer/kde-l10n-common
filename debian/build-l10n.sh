@@ -27,6 +27,16 @@ function mapKdeCodeToUbuntu {
 
 GET="scp ftpubuntu@ktown.kde.org:/home/packager/ftpubuntu"
 
+clean_dld=1
+
+for arg in "$@"
+do
+    case "$arg" in
+    -ncd)   clean_dld=0
+            ;;
+    esac
+done
+
 WDIR=`pwd`
 case ${WDIR##*/} in
   "debian" )
@@ -36,8 +46,16 @@ case ${WDIR##*/} in
   "kubuntu-kde-l10n-common" )
     ;;
 esac
-rm -rf build
-mkdir build
+
+# clean build dir
+if [ $clean_dld -eq 0 ]; then
+  ls build/ | grep -v build-area | xargs rm -rf
+  ls build/build-area/ | grep -v ".tar.bz2" | xargs rm -rf
+else
+  rm -rf build
+  mkdir build
+fi
+
 cd build
 WDIR=`pwd`
 
@@ -75,6 +93,9 @@ for tfile in `ls kde-l10n-*.tar.bz2`; do
 
     ubuntucode=$kdecode
     mapKdeCodeToUbuntu ubuntucode
+
+    # remove any left overs from previous runs
+    rm -r kde-l10n-${ubuntucode}_${VERSION}.orig.tar.bz2
 
     ln -s $tfile kde-l10n-${ubuntucode}_${VERSION}.orig.tar.bz2
     tar xf kde-l10n-${ubuntucode}_${VERSION}.orig.tar.bz2
