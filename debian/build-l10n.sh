@@ -5,7 +5,7 @@ function mapKdeCodeToUbuntu {
     "be@latin" )
       eval "$1=\"belatin\"";;
     "ca@valencia" )
-      eval "$1=\"cavalencia\"";;
+      eval "$1=\"ca-valencia\"";;
     "en_GB" )
       eval "$1=\"engb\"";;
     "pt_BR" )
