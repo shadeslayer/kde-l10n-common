@@ -1,3 +1,9 @@
+kde-l10n-aaaUBUNTULANGCODEbbb (4:4.4.2-0ubuntu2) lucid; urgency=low
+
+  * Fix building of kde-l10n-sv as per advise on the kde-packager mailing list
+
+ -- Harald Sitter <apachelogger@ubuntu.com>  Wed, 31 Mar 2010 11:57:33 +0200
+
 kde-l10n-aaaUBUNTULANGCODEbbb (4:4.4.2-0ubuntu1) lucid; urgency=low
 
   * New upstream release
