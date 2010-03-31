@@ -49,10 +49,10 @@ esac
 
 # clean build dir
 if [ $clean_dld -eq 0 ]; then
-  ls build/ | grep -v build-area | xargs rm -rf
-  ls build/build-area/ | grep -v ".tar.bz2" | xargs rm -rf
+  find build/* -maxdepth 0 | grep -v build-area | xargs rm -rfv
+  find build/build-area/* -maxdepth 0 | grep -v ".tar.bz2" | xargs rm -rfv
 else
-  rm -rf build
+  rm -rvf build
   mkdir build
 fi
 
@@ -82,7 +82,11 @@ fi
 cd $WDIR
 
 cd build-area
-$GET/stable/${KDEVERSION}/src/kde-l10n/kde-l10n-*.tar.bz2 .
+
+# only download tars if we actually removed them
+if [ $clean_dld -ne 0 ]; then
+  $GET/stable/${KDEVERSION}/src/kde-l10n/kde-l10n-*.tar.bz2 .
+fi
 
 for tfile in `ls kde-l10n-*.tar.bz2`; do
   cd $WDIR
