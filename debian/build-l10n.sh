@@ -25,11 +25,7 @@ function mapKdeCodeToUbuntu {
   esac
 }
 
-# if [ $1 == "ftp" ]; then
-#   GET=
-# else
-  GET="scp ftpubuntu@ktown.kde.org:/home/packager/ftpubuntu"
-# fi
+GET="scp ftpubuntu@ktown.kde.org:/home/packager/ftpubuntu"
 
 WDIR=`pwd`
 case ${WDIR##*/} in
