@@ -25,6 +25,13 @@ function mapKdeCodeToUbuntu {
   esac
 }
 
+function mapUbuntuNameToDep {
+  case `eval "expr \"\$"$1"\" "` in
+    "ca-valencia" )
+      eval "$1=\"ca\"";;
+  esac
+}
+
 GET="scp ftpubuntu@ktown.kde.org:/home/packager/ftpubuntu"
 
 clean_dld=1
@@ -95,8 +102,12 @@ for tfile in `ls kde-l10n-*.tar.bz2`; do
   if [[ $tfile =~ kde-l10n-(.*)-$KDEVERSION.tar.bz2 ]]; then
     kdecode=${BASH_REMATCH[1]}
 
+    # set mappings
     ubuntucode=$kdecode
     mapKdeCodeToUbuntu ubuntucode
+
+    ubuntudep=$ubuntucode
+    mapUbuntuNameToDep ubuntudep
 
     # remove any left overs from previous runs
     rm -r kde-l10n-${ubuntucode}_${VERSION}.orig.tar.bz2
@@ -121,6 +132,7 @@ for tfile in `ls kde-l10n-*.tar.bz2`; do
 
     cd kde-l10n-$kdecode/debian/
     for dfile in `ls`; do
+      sed -i "s/aaaUBUNTULANGDEPbbb/$ubuntudep/g" $dfile
       sed -i "s/aaaUBUNTULANGCODEbbb/$ubuntucode/g" $dfile
       sed -i "s/aaaKDELANGCODEbbb/$kdecode/g" $dfile
       sed -i "s/aaaKDELANGNAMEbbb/$kdename/g" $dfile
