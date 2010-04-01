@@ -27,8 +27,26 @@ function mapKdeCodeToUbuntu {
 
 function mapUbuntuNameToDep {
   case `eval "expr \"\$"$1"\" "` in
+    "belatin" )
+      eval "$1=\"be\"";;
     "ca-valencia" )
       eval "$1=\"ca\"";;
+    "engb" )
+      eval "$1=\"en\"";;
+    "ptbr" )
+      eval "$1=\"br\"";;
+    "srijekavian" )
+      eval "$1=\"sr\"";;
+    "srijekavianlatin" )
+      eval "$1=\"sr\"";;
+    "srlatin" )
+      eval "$1=\"sr\"";;
+    "uzcyrillic" )
+      eval "$1=\"uz\"";;
+    "zhcn" )
+      eval "$1=\"zh-hans\"";;
+    "zhtw" )
+      eval "$1=\"zh-hant\"";;
   esac
 }
 

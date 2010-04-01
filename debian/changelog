@@ -1,3 +1,9 @@
+kde-l10n-aaaUBUNTULANGCODEbbb (4:4.4.2-0ubuntu4) lucid; urgency=low
+
+  * Fix wrong langpack-kde-* mappings
+
+ -- Harald Sitter <apachelogger@ubuntu.com>  Thu, 01 Apr 2010 15:50:26 +0200
+
 kde-l10n-aaaUBUNTULANGCODEbbb (4:4.4.2-0ubuntu3) lucid; urgency=low
 
   * Fix building as per apachelogger, instead of kde-packager mailing list
