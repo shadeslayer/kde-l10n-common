@@ -53,12 +53,16 @@ function mapUbuntuNameToDep {
 GET="scp ftpubuntu@ktown.kde.org:/home/packager/ftpubuntu"
 
 clean_dld=1
+subset=""
 
 for arg in "$@"
 do
     case "$arg" in
-    -ncd)   clean_dld=0
-            ;;
+    -ncd)
+      clean_dld=0
+      ;;
+    *)
+      subset="$subset $arg"
     esac
 done
 
@@ -110,7 +114,15 @@ cd build-area
 
 # only download tars if we actually removed them
 if [ $clean_dld -ne 0 ]; then
-  $GET/stable/${KDEVERSION}/src/kde-l10n/kde-l10n-*.tar.bz2 .
+  if [[ "$subset" == "" ]]; then
+    # get all
+    $GET/stable/${KDEVERSION}/src/kde-l10n/kde-l10n-*.tar.bz2 .
+  else
+    # only get subset
+    for pkg in $subset; do
+      $GET/stable/${KDEVERSION}/src/kde-l10n/kde-l10n-$pkg-*.tar.bz2 .
+    done
+  fi
 fi
 
 for tfile in `ls kde-l10n-*.tar.bz2`; do
@@ -157,6 +169,6 @@ for tfile in `ls kde-l10n-*.tar.bz2`; do
       sed -i "s/###BOILERPLATE###/$BOILERPLATE/g" $dfile
     done
 
-    bzr-buildpackage -S --builder "make -f debian/rules get-desktop && dpkg-buildpackage -S -sa"
+    bzr-buildpackage -S --builder "make -f debian/rules get-desktop && dpkg-buildpackage -S"
   fi
 done
