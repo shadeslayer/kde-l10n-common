@@ -6,6 +6,7 @@ LANGCODE=aaaKDELANGCODEbbb
 SVNREV={2010-03-26}
 
 get-desktop:
+	# Fetch all and any desktop file pos for KDE core modules from stable
 	cd messages; \
 		for module in kde*; do \
 			cd $${module}; \
@@ -19,10 +20,11 @@ get-desktop:
 	-cp messages/kdebase/desktop_kdebase.po messages/kdebase/desktop_kdebase-workspace.po
 	-cp messages/kdepim/desktop_kdepim.po messages/kdepim/desktop_kdepim-runtime.po
 
+	# Fetch playground and extragear desktop file pos as per list from pkg-kde-tools
 	cd messages/kdelibs; \
 		for file in `cat /usr/lib/kubuntu-desktop-i18n/desktop-template-list`; do \
-# 			svn export -r${SVNREV} svn://anonsvn.kde.org/home/kde/trunk/l10n-kde4/$(LANGCODE)/messages/$${file}.po; \
-			svn export -r${SVNREV} svn://anonsvn.kde.org/home/kde/branches/stable/l10n-kde4/$(LANGCODE)/messages/$${file}.po; \
+ 			svn export -r${SVNREV} svn://anonsvn.kde.org/home/kde/trunk/l10n-kde4/$(LANGCODE)/messages/$${file}.po; \
+# 			svn export -r${SVNREV} svn://anonsvn.kde.org/home/kde/branches/stable/l10n-kde4/$(LANGCODE)/messages/$${file}.po; \
 		done; \
 	cd ../..;
 

@@ -1,3 +1,11 @@
+kde-l10n-aaaUBUNTULANGCODEbbb (4:4.4.2-0ubuntu5) lucid; urgency=low
+
+  * Comment debian/rules a bit more.
+  * Make sure extragear and playground desktop files are coming from trunk,
+    we need a more sensible approach to this though (LP: #560411)
+
+ -- Harald Sitter <apachelogger@ubuntu.com>  Sun, 11 Apr 2010 12:39:55 +0200
+
 kde-l10n-aaaUBUNTULANGCODEbbb (4:4.4.2-0ubuntu4) lucid; urgency=low
 
   * Fix wrong langpack-kde-* mappings
