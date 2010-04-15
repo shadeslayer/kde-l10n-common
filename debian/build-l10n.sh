@@ -76,6 +76,15 @@ case ${WDIR##*/} in
     ;;
 esac
 
+if [ -e build ]; then
+  echo "Do you REALLY REALLY want to nuke the current build dir? (y/n)"
+  read -e reply
+  if [[ $reply != "y" ]]; then
+    echo "bye!"
+    exit 0
+  fi
+fi
+
 # clean build dir
 if [ $clean_dld -eq 0 ]; then
   find build/* -maxdepth 0 | grep -v build-area | xargs rm -rfv
