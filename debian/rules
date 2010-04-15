@@ -30,3 +30,7 @@ get-desktop:
 
 %:
 	dh --with kde --with quilt $@
+
+override_dh_install:
+	dh_install -i
+	rm -f debian/kde-l10n-aaaUBUNTULANGCODEbbb/usr/share/locale/$(LANGCODE)/entry.desktop
