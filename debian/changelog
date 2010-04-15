@@ -2,6 +2,8 @@ kde-l10n-aaaUBUNTULANGCODEbbb (4:4.4.2-0ubuntu6) lucid; urgency=low
 
   * Strip entry.desktop file to prevent duplication in KDE's various
     locale listings, most importantly the locale selection button LP: #446739
+  * Reupload so that ca@valencia gets imported properly, now that it is in
+    main LP: #563755
 
  -- Harald Sitter <apachelogger@ubuntu.com>  Thu, 15 Apr 2010 13:51:02 +0200
 
