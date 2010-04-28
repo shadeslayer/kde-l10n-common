@@ -34,7 +34,7 @@ function mapUbuntuNameToDep {
     "engb" )
       eval "$1=\"en\"";;
     "ptbr" )
-      eval "$1=\"br\"";;
+      eval "$1=\"pt\"";;
     "srijekavian" )
       eval "$1=\"sr\"";;
     "srijekavianlatin" )
@@ -77,7 +77,7 @@ case ${WDIR##*/} in
 esac
 
 if [ -e build ]; then
-  echo "Do you REALLY REALLY want to nuke the current build dir? (y/n)"
+  echo "Do you REALLY REALLY want to mess with the current build dir? (y/n)"
   read -e reply
   if [[ $reply != "y" ]]; then
     echo "bye!"

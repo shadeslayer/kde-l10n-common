@@ -1,3 +1,9 @@
+kde-l10n-aaaUBUNTULANGCODEbbb (4:4.4.2-0ubuntu7.1) UNRELEASED; urgency=low
+
+  * Map ptbr to appropriate Ubuntu code pt instead of br (LP: #561873)
+
+ -- Harald Sitter <apachelogger@ubuntu.com>  Thu, 29 Apr 2010 01:31:21 +0200
+
 kde-l10n-aaaUBUNTULANGCODEbbb (4:4.4.2-0ubuntu7) lucid; urgency=low
 
   * Reapply apachelogger's patch from 4:4.4.2-0ubuntu3 to fix FTBFS
