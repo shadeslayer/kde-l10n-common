@@ -1,4 +1,4 @@
-kde-l10n-aaaUBUNTULANGCODEbbb (4:4.4.2-0ubuntu7.1) UNRELEASED; urgency=low
+kde-l10n-aaaUBUNTULANGCODEbbb (4:4.4.2-0ubuntu7.1) lucid-proposed; urgency=low
 
   * Map ptbr to appropriate Ubuntu code pt instead of br (LP: #561873)
 
