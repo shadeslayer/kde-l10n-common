@@ -1,3 +1,9 @@
+kde-l10n-aaaUBUNTULANGCODEbbb (4:4.4.3-0ubuntu1) UNRELEASED; urgency=low
+
+  * New upstream release
+
+ -- Harald Sitter <apachelogger@ubuntu.com>  Tue, 04 May 2010 14:16:07 +0200
+
 kde-l10n-aaaUBUNTULANGCODEbbb (4:4.4.2-0ubuntu7.1) lucid-proposed; urgency=low
 
   * Map ptbr to appropriate Ubuntu code pt instead of br (LP: #561873)
