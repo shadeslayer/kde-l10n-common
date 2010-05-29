@@ -55,6 +55,11 @@ GET="scp ftpubuntu@ktown.kde.org:/home/packager/ftpubuntu"
 clean_dld=1
 subset=""
 
+if [ ! -x /usr/bin/bzr-buildpackage ]; then
+  echo "bzr-buildpackage needs to be installed to build kde-l10n packages"
+  exit 1
+fi
+
 for arg in "$@"
 do
     case "$arg" in
