@@ -77,7 +77,9 @@ case ${WDIR##*/} in
 esac
 
 if [ -e build ]; then
+  echo "A already existing build/ directory was found, which indicates that there was a build done earlier."
   echo "Do you REALLY REALLY want to mess with the current build dir? (y/n)"
+  echo "Note: you can also run this script with -ncd to preserve only the tar.bz2 files from build/."
   read -e reply
   if [[ $reply != "y" ]]; then
     echo "bye!"
