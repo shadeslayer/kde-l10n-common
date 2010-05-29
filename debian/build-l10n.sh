@@ -125,11 +125,11 @@ cd build-area
 if [ $clean_dld -ne 0 ]; then
   if [[ "$subset" == "" ]]; then
     # get all
-    $GET/stable/${KDEVERSION}/src/kde-l10n/kde-l10n-*.tar.bz2 .
+    $GET/unstable/${KDEVERSION}/src/kde-l10n/kde-l10n-*.tar.bz2 .
   else
     # only get subset
     for pkg in $subset; do
-      $GET/stable/${KDEVERSION}/src/kde-l10n/kde-l10n-$pkg-*.tar.bz2 .
+      $GET/unstable/${KDEVERSION}/src/kde-l10n/kde-l10n-$pkg-*.tar.bz2 .
     done
   fi
 fi
