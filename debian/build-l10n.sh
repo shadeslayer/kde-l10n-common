@@ -83,8 +83,8 @@ esac
 
 if [ -e build ]; then
   echo "A already existing build/ directory was found, which indicates that there was a build done earlier."
-  echo "Do you REALLY REALLY want to mess with the current build dir? (y/n)"
   echo "Note: you can also run this script with -ncd to preserve only the tar.bz2 files from build/."
+  echo "Do you REALLY REALLY want to mess with the current build dir? (y/n)"
   read -e reply
   if [[ $reply != "y" ]]; then
     echo "bye!"
@@ -109,7 +109,8 @@ CO="common"
 BOILERPLATE="# ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! !#\n# DO NOT EVEN THINK ABOUT CHANGING THIS FILE DIRECTLY! ! ! !\n# PLEASE USE THE BZR BRANCH AS SEEN IN debian\/control\n# MAKE YOUR CHANGES THERE AND THEN RUN debian\/build-l10n.sh\n# kthxbai :)\n################################################################################\n################################################################################\n################################################################################\n################################################################################"
 
 if [[ `bzr revno` != `bzr revno ${BRANCH}` ]]; then
-  echo "YOU MUST PUSH TO THE PARENT BRANCH BEFORE BUILDING THE PACKAGES!!!"
+  echo "For one reason or another the parent branch does not match the local one, please ensure they match, or all is going down the drain."
+  echo "Most importantly: YOU MUST PUSH TO THE PARENT BRANCH BEFORE BUILDING THE PACKAGES!!!"
   echo "Leaving you alone in the cold."
   exit 1
 fi
