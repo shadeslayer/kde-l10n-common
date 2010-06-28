@@ -1,3 +1,9 @@
+kde-l10n-aaaUBUNTULANGCODEbbb (4:4.4.90-0ubuntu1) maverick; urgency=low
+
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 28 Jun 2010 11:19:59 +0100
+
 kde-l10n-aaaUBUNTULANGCODEbbb (4:4.4.85-0ubuntu1) maverick; urgency=low
 
   * New upstream release
