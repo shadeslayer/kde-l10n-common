@@ -1,6 +1,7 @@
 kde-l10n-aaaUBUNTULANGCODEbbb (4:4.4.92-0ubuntu1) maverick; urgency=low
 
   * New upstream release
+  * Download kdepim 4.4.5 translations as part of source build
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 12 Jul 2010 18:47:30 +0100
 

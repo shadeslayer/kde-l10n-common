@@ -27,6 +27,11 @@ get-desktop:
 		done; \
 	cd ../..;
 
+	# Fetch kdepim 4.4.5 translations
+	cd messages; \
+		svn export svn://anonsvn.kde.org/home/kde/tags/KDE/4.4.5/kde-l10n/${LANGCODE}/messages/kdepim/; \
+	cd ..;
+
 %:
 	dh --with kde --with quilt $@
 
