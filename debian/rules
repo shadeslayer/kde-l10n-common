@@ -2,8 +2,8 @@
 ###BOILERPLATE###
 
 LANGCODE=aaaKDELANGCODEbbb
-#take translations from stable branch to match our KDE 4.4.3 version
-SVNREV=1142640
+#take translations from stable branch to match our KDE SC version
+SVNREV=1147227
 
 get-desktop:
 	# Fetch all and any desktop file pos for KDE core modules from stable
@@ -15,7 +15,7 @@ get-desktop:
 		done; \
 	cd ../..;
 
-	# I do not claim to understand this magic here, but I really think it should get a comment
+	# These are not split in svn but are split in release tars, so copy svn file to also cover release tar file
 	-cp messages/kdebase/desktop_kdebase.po messages/kdebase/desktop_kdebase-runtime.po
 	-cp messages/kdebase/desktop_kdebase.po messages/kdebase/desktop_kdebase-workspace.po
 	-cp messages/kdepim/desktop_kdepim.po messages/kdepim/desktop_kdepim-runtime.po
@@ -23,8 +23,7 @@ get-desktop:
 	# Fetch playground and extragear desktop file pos as per list from pkg-kde-tools
 	cd messages/kdelibs; \
 		for file in `cat /usr/lib/kubuntu-desktop-i18n/desktop-template-list`; do \
- 			svn export -r${SVNREV} svn://anonsvn.kde.org/home/kde/trunk/l10n-kde4/$(LANGCODE)/messages/$${file}.po; \
-# 			svn export -r${SVNREV} svn://anonsvn.kde.org/home/kde/branches/stable/l10n-kde4/$(LANGCODE)/messages/$${file}.po; \
+			svn export -r${SVNREV} svn://anonsvn.kde.org/home/kde/trunk/l10n-kde4/$(LANGCODE)/messages/$${file}.po; \
 		done; \
 	cd ../..;
 
