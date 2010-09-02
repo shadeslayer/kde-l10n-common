@@ -1,3 +1,9 @@
+kde-l10n-aaaUBUNTULANGCODEbbb (4:4.5.1-0ubuntu1) maverick; urgency=low
+
+  * New upstream release
+
+ -- Harald Sitter <apachelogger@ubuntu.com>  Thu, 02 Sep 2010 12:03:13 +0200
+
 kde-l10n-aaaUBUNTULANGCODEbbb (4:4.5.0b-0ubuntu1) maverick; urgency=low
 
   * New tars from upstream
