@@ -1,3 +1,15 @@
+kde-l10n-aaaUBUNTULANGCODEbbb (4:4.5.2-0ubuntu1~ppa1) maverick; urgency=low
+
+  * PPA build
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 05 Oct 2010 12:34:49 +0100
+
+kde-l10n-aaaUBUNTULANGCODEbbb (4:4.5.2-0ubuntu1) UNRELEASED; urgency=low
+
+  * New upstream version
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 05 Oct 2010 12:34:35 +0100
+
 kde-l10n-aaaUBUNTULANGCODEbbb (4:4.5.1-0ubuntu1) maverick; urgency=low
 
   * New upstream release
