@@ -1,3 +1,9 @@
+kde-l10n-aaaUBUNTULANGCODEbbb (4:4.5.3-0ubuntu1~maverick1~ppa1) maverick; urgency=low
+
+  * 4.5.3 PPA build
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 04 Nov 2010 13:16:43 +0000
+
 kde-l10n-aaaUBUNTULANGCODEbbb (4:4.5.2-0ubuntu1~ppa1) maverick; urgency=low
 
   * PPA build
