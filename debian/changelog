@@ -1,3 +1,9 @@
+kde-l10n-aaaUBUNTULANGCODEbbb (4:4.5.3-0ubuntu1~lucid1~ppa1) lucid; urgency=low
+
+  * No change backport
+
+ -- Rohan Garg <rohangarg@ubuntu.com>  Wed, 17 Nov 2010 15:12:48 +0530
+
 kde-l10n-aaaUBUNTULANGCODEbbb (4:4.5.3-0ubuntu1) natty; urgency=low
 
   * New upstream release
