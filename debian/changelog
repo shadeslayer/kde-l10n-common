@@ -1,8 +1,8 @@
-kde-l10n-aaaUBUNTULANGCODEbbb (4:4.5.3-0ubuntu1~lucid1~ppa1) lucid; urgency=low
+kde-l10n-aaaUBUNTULANGCODEbbb (4:4.5.80-0ubuntu1) natty; urgency=low
 
-  * No change backport
+  * New upstream beta release
 
- -- Rohan Garg <rohangarg@ubuntu.com>  Wed, 17 Nov 2010 15:12:48 +0530
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 29 Nov 2010 17:52:23 +0000
 
 kde-l10n-aaaUBUNTULANGCODEbbb (4:4.5.3-0ubuntu1) natty; urgency=low
 
