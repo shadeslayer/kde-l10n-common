@@ -1,3 +1,9 @@
+kde-l10n-aaaUBUNTULANGCODEbbb (4:4.6.0-0ubuntu1) natty; urgency=low
+
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 24 Jan 2011 09:32:25 +0000
+
 kde-l10n-aaaUBUNTULANGCODEbbb (4:4.5.95-0ubuntu1) natty; urgency=low
 
   * New upstream RC release

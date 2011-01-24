@@ -3,7 +3,7 @@
 
 LANGCODE=aaaKDELANGCODEbbb
 #take translations from stable branch to match our KDE SC version
-SVNREV=1211569
+SVNREV=1216038
 
 get-desktop:
 	# Fetch all and any desktop file pos for KDE core modules from stable
