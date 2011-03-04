@@ -1,3 +1,9 @@
+kde-l10n-aaaUBUNTULANGCODEbbb (4:4.6.1-0ubuntu1) natty; urgency=low
+
+  * New upstream release
+
+ -- Felix Geyer <debfx-pkg@fobos.de>  Fri, 04 Mar 2011 20:37:16 +0100
+
 kde-l10n-aaaUBUNTULANGCODEbbb (4:4.6.0-0ubuntu1) natty; urgency=low
 
   * New upstream release
