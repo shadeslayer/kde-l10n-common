@@ -1,6 +1,7 @@
 kde-l10n-aaaUBUNTULANGCODEbbb (4:4.6.1-0ubuntu2) UNRELEASED; urgency=low
 
   * Don't use quilt, obsolete with source format 3.0.
+  * Compress the debian packaging tarball with bzip2.
 
  -- Felix Geyer <debfx-pkg@fobos.de>  Sat, 12 Mar 2011 10:17:56 +0100
 
