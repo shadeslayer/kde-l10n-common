@@ -33,7 +33,7 @@ get-desktop:
 	cd ..;
 
 %:
-	dh --with kde --with quilt $@
+	dh $@ --with kde
 
 override_dh_install:
 	dh_install -i
