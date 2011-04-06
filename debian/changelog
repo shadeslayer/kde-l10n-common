@@ -1,9 +1,13 @@
-kde-l10n-aaaUBUNTULANGCODEbbb (4:4.6.1-0ubuntu2) UNRELEASED; urgency=low
+kde-l10n-aaaUBUNTULANGCODEbbb (4:4.6.2-0ubuntu1) natty; urgency=low
 
+  [ Jonathan Riddell ]
+  * New upstream release
+
+  [ Felix Geyer ]
   * Don't use quilt, obsolete with source format 3.0.
   * Compress the debian packaging tarball with bzip2.
 
- -- Felix Geyer <debfx-pkg@fobos.de>  Sat, 12 Mar 2011 10:17:56 +0100
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 06 Apr 2011 14:12:09 +0100
 
 kde-l10n-aaaUBUNTULANGCODEbbb (4:4.6.1-0ubuntu1) natty; urgency=low
 
