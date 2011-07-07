@@ -16,8 +16,7 @@ else
 	endif
 endif
 
-
-get-desktop: get-kdepim
+get-desktop:
 	# Fetch all and any desktop file pos for KDE core modules from stable
 	cd messages; \
 		for module in *; do \
@@ -46,6 +45,8 @@ get-kdepim:
 		svn export svn://anonsvn.kde.org/home/kde/tags/KDE/4.4.5/kde-l10n/${LANGCODE}/messages/kdepim/; \
 	cd ..;
 
+get-l10n: get-desktop get-kdepim
+
 %:
 	dh $@ --with kde
 
@@ -53,4 +54,4 @@ override_dh_install:
 	dh_install -i
 	rm -f debian/kde-l10n-aaaUBUNTULANGCODEbbb/usr/share/locale/$(LANGCODE)/entry.desktop
 
-.PHONY: get-desktop, get-kdepim
+.PHONY: get-desktop get-kdepim get-l10n

@@ -7,8 +7,10 @@ kde-l10n-aaaUBUNTULANGCODEbbb (4:4.6.90-0ubuntu1) UNRELEASED; urgency=low
   * Make kdepim l10n fetching its own target
   * Update build script for new branch name
   * Update build script to use ftpmaster rather than ktown
+  * Introduce new get-l10n target which is called by the build script and
+    depends on all other targets that need execution to get l10n
 
- -- Harald Sitter <apachelogger@ubuntu.com>  Thu, 07 Jul 2011 12:36:08 +0200
+ -- Harald Sitter <apachelogger@ubuntu.com>  Thu, 07 Jul 2011 12:39:53 +0200
 
 kde-l10n-aaaUBUNTULANGCODEbbb (4:4.6.2-0ubuntu1) natty; urgency=low
 

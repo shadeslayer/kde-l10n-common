@@ -186,6 +186,6 @@ for tfile in `ls kde-l10n-*.tar.bz2`; do
       sed -i "s/###BOILERPLATE###/$BOILERPLATE/g" $dfile
     done
 
-    bzr-buildpackage -S --builder "make -f debian/rules get-desktop && dpkg-buildpackage -S -us -uc"
+    bzr-buildpackage -S --builder "make -f debian/rules get-l10n && dpkg-buildpackage -S -us -uc"
   fi
 done
