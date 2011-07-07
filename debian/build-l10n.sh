@@ -50,7 +50,7 @@ function mapUbuntuNameToDep {
   esac
 }
 
-GET="scp ftpubuntu@ktown.kde.org:/home/packager/ftpubuntu"
+GET="scp ftpubuntu@ftpmaster.kde.org:/home/packager/ftpubuntu"
 
 clean_dld=1
 subset=""
