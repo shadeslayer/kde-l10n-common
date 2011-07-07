@@ -104,7 +104,7 @@ fi
 cd build
 WDIR=`pwd`
 
-BRANCH="lp:~kubuntu-packagers/kubuntu-dev-tools/kde-l10n-common"
+BRANCH="lp:~kubuntu-packagers/kubuntu-packaging/kde-l10n-common"
 CO="common"
 BOILERPLATE="# ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! !#\n# DO NOT EVEN THINK ABOUT CHANGING THIS FILE DIRECTLY! ! ! !\n# PLEASE USE THE BZR BRANCH AS SEEN IN debian\/control\n# MAKE YOUR CHANGES THERE AND THEN RUN debian\/build-l10n.sh\n# kthxbai :)\n################################################################################\n################################################################################\n################################################################################\n################################################################################"
 
