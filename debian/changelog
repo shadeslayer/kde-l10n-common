@@ -1,8 +1,11 @@
 kde-l10n-aaaUBUNTULANGCODEbbb (4:4.6.90-0ubuntu1) UNRELEASED; urgency=low
 
   * Enable easy switching between stable and unstable translations
+  * Make module desktop fetching more robust by trying to step into every
+    element within the messages directory and if successful try to svn export
+    a related desktop file
 
- -- Harald Sitter <apachelogger@ubuntu.com>  Thu, 07 Jul 2011 12:27:52 +0200
+ -- Harald Sitter <apachelogger@ubuntu.com>  Thu, 07 Jul 2011 12:30:52 +0200
 
 kde-l10n-aaaUBUNTULANGCODEbbb (4:4.6.2-0ubuntu1) natty; urgency=low
 

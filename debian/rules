@@ -20,9 +20,10 @@ endif
 get-desktop:
 	# Fetch all and any desktop file pos for KDE core modules from stable
 	cd messages; \
-		for module in kde*; do \
-			cd $${module}; \
-			svn export -r${SVNREV} svn://anonsvn.kde.org/home/kde/branches/stable/l10n-kde4/$(LANGCODE)/messages/$${module}/desktop_$${module}.po; \
+		for module in *; do \
+			if cd $${module} ; then \
+				svn export -r${SVNREV} $(SVNURL)/$(LANGCODE)/messages/$${module}/desktop_$${module}.po; \
+			fi; \
 			cd ..; \
 		done; \
 	cd ../..;
