@@ -17,7 +17,7 @@ else
 endif
 
 
-get-desktop:
+get-desktop: get-kdepim
 	# Fetch all and any desktop file pos for KDE core modules from stable
 	cd messages; \
 		for module in *; do \
@@ -40,6 +40,7 @@ get-desktop:
 		done; \
 	cd ../..;
 
+get-kdepim:
 	# Fetch kdepim 4.4.5 translations
 	cd messages; \
 		svn export svn://anonsvn.kde.org/home/kde/tags/KDE/4.4.5/kde-l10n/${LANGCODE}/messages/kdepim/; \
