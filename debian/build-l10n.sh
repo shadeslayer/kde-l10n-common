@@ -77,7 +77,7 @@ case ${WDIR##*/} in
     cd ..;;
   "build" )
     cd ..;;
-  "kubuntu-kde-l10n-common" )
+  "kde-l10n-common" )
     ;;
 esac
 

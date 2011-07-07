@@ -52,3 +52,5 @@ get-kdepim:
 override_dh_install:
 	dh_install -i
 	rm -f debian/kde-l10n-aaaUBUNTULANGCODEbbb/usr/share/locale/$(LANGCODE)/entry.desktop
+
+.PHONY: get-desktop, get-kdepim

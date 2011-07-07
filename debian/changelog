@@ -5,8 +5,9 @@ kde-l10n-aaaUBUNTULANGCODEbbb (4:4.6.90-0ubuntu1) UNRELEASED; urgency=low
     element within the messages directory and if successful try to svn export
     a related desktop file
   * Make kdepim l10n fetching its own target
+  * Update build script for new branch name
 
- -- Harald Sitter <apachelogger@ubuntu.com>  Thu, 07 Jul 2011 12:33:28 +0200
+ -- Harald Sitter <apachelogger@ubuntu.com>  Thu, 07 Jul 2011 12:35:30 +0200
 
 kde-l10n-aaaUBUNTULANGCODEbbb (4:4.6.2-0ubuntu1) natty; urgency=low
 
