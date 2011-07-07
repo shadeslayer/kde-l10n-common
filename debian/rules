@@ -7,13 +7,13 @@ SVNREV=1227117
 BRANCH=unstable
 
 ifeq ($(BRANCH),stable)
-    export SVNURL=svn://anonsvn.kde.org/home/kde/branches/stable/l10n-kde4
+	export SVNURL=svn://anonsvn.kde.org/home/kde/branches/stable/l10n-kde4
 else
-    ifeq ($(BRANCH),unstable)
-        export SVNURL=svn://anonsvn.kde.org/home/kde/trunk/l10n-kde4
-    else
-        @echo UNKNOWN BRANCH VALUE
-    endif
+	ifeq ($(BRANCH),unstable)
+		export SVNURL=svn://anonsvn.kde.org/home/kde/trunk/l10n-kde4
+	else
+		@echo UNKNOWN BRANCH VALUE
+	endif
 endif
 
 
