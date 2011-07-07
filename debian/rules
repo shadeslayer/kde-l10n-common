@@ -2,8 +2,20 @@
 ###BOILERPLATE###
 
 LANGCODE=aaaKDELANGCODEbbb
-#take translations from stable branch to match our KDE SC version
+# Make revision and branch match the KDE SC version we have
 SVNREV=1227117
+BRANCH=unstable
+
+ifeq ($(BRANCH),stable)
+    export SVNURL=svn://anonsvn.kde.org/home/kde/branches/stable/l10n-kde4
+else
+    ifeq ($(BRANCH),unstable)
+        export SVNURL=svn://anonsvn.kde.org/home/kde/trunk/l10n-kde4
+    else
+        @echo UNKNOWN BRANCH VALUE
+    endif
+endif
+
 
 get-desktop:
 	# Fetch all and any desktop file pos for KDE core modules from stable
