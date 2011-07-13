@@ -1,7 +1,5 @@
 #!/bin/bash
 
-source config
-
 function mapKdeCodeToUbuntu {
   case `eval "expr \"\$"$1"\" "` in
     "be@latin" )
@@ -80,6 +78,11 @@ case ${WDIR##*/} in
   "kde-l10n-common" )
     ;;
 esac
+
+if ! source debian/config ; then
+    echo "could not source config!!"
+    exit 1
+fi
 
 if [ -e build ]; then
   echo "A already existing build/ directory was found, which indicates that there was a build done earlier."

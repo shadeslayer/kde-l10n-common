@@ -1,4 +1,4 @@
-kde-l10n-aaaUBUNTULANGCODEbbb (4:4.6.90-0ubuntu1) UNRELEASED; urgency=low
+kde-l10n-aaaUBUNTULANGCODEbbb (4:4.6.90-0ubuntu1) oneiric; urgency=low
 
   * Enable easy switching between stable and unstable translations
   * Make module desktop fetching more robust by trying to step into every
@@ -24,7 +24,7 @@ kde-l10n-aaaUBUNTULANGCODEbbb (4:4.6.90-0ubuntu1) UNRELEASED; urgency=low
   * Bump standards version to 3.9.2
   * Update VCS paths (now living in the kubuntu-packaging project)
 
- -- Harald Sitter <apachelogger@ubuntu.com>  Thu, 07 Jul 2011 12:39:53 +0200
+ -- Harald Sitter <apachelogger@ubuntu.com>  Wed, 13 Jul 2011 19:24:03 +0200
 
 kde-l10n-aaaUBUNTULANGCODEbbb (4:4.6.2-0ubuntu1) natty; urgency=low
 
