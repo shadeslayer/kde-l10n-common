@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source config
+
 function mapKdeCodeToUbuntu {
   case `eval "expr \"\$"$1"\" "` in
     "be@latin" )
@@ -49,8 +51,6 @@ function mapUbuntuNameToDep {
       eval "$1=\"zh-hant\"";;
   esac
 }
-
-GET="scp ftpubuntu@ftpmaster.kde.org:/home/packager/ftpubuntu"
 
 clean_dld=1
 subset=""
@@ -104,8 +104,6 @@ fi
 cd build
 WDIR=`pwd`
 
-BRANCH="lp:~kubuntu-packagers/kubuntu-packaging/kde-l10n-common"
-CO="common"
 BOILERPLATE="# ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! !#\n# DO NOT EVEN THINK ABOUT CHANGING THIS FILE DIRECTLY! ! ! !\n# PLEASE USE THE BZR BRANCH AS SEEN IN debian\/control\n# MAKE YOUR CHANGES THERE AND THEN RUN debian\/build-l10n.sh\n# kthxbai :)\n################################################################################\n################################################################################\n################################################################################\n################################################################################"
 
 if [[ `bzr revno` != `bzr revno ${BRANCH}` ]]; then
@@ -133,11 +131,11 @@ cd build-area
 if [ $clean_dld -ne 0 ]; then
   if [[ "$subset" == "" ]]; then
     # get all
-    $GET/stable/${KDEVERSION}/src/kde-l10n/kde-l10n-*.tar.bz2 .
+    $GET/${TYPE}/${KDEVERSION}/src/kde-l10n/kde-l10n-*.tar.bz2 .
   else
     # only get subset
     for pkg in $subset; do
-      $GET/stable/${KDEVERSION}/src/kde-l10n/kde-l10n-$pkg-*.tar.bz2 .
+      $GET/${TYPE}/${KDEVERSION}/src/kde-l10n/kde-l10n-$pkg-*.tar.bz2 .
     done
   fi
 fi

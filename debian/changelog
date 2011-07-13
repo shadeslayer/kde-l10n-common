@@ -4,11 +4,25 @@ kde-l10n-aaaUBUNTULANGCODEbbb (4:4.6.90-0ubuntu1) UNRELEASED; urgency=low
   * Make module desktop fetching more robust by trying to step into every
     element within the messages directory and if successful try to svn export
     a related desktop file
-  * Make kdepim l10n fetching its own target
   * Update build script for new branch name
   * Update build script to use ftpmaster rather than ktown
-  * Introduce new get-l10n target which is called by the build script and
-    depends on all other targets that need execution to get l10n
+  * Introduce new targets:
+    - get-l10n: called by the build script and
+      depends on all other targets that need execution to get l10n
+    - get-desktop: prerequisites all targets to get desktop file translations
+    - get-messages: prerequisites all targets to get UI translations
+    - get-messages-kdepim: gets all kdepim translations
+    - get-desktop-sc: gets all desktop files for all modules in the source tree
+    - get-desktop-extragear: gets all desktop files for extragera apps in main
+      (as per list installed by pkg-kde-tools)
+    - get-desktop-kdepim: copies kdepim's desktop file to kdepim_runtime
+  * Introduce new debian/config file which hold settings for rules and build
+    script.
+  * Check presence of necessary debian/config values in debian/rules
+  * Fetch desktop files by regex in debian/rules (split modules have multiple
+    desktop_* files in their SVN path)
+  * Bump standards version to 3.9.2
+  * Update VCS paths (now living in the kubuntu-packaging project)
 
  -- Harald Sitter <apachelogger@ubuntu.com>  Thu, 07 Jul 2011 12:39:53 +0200
 

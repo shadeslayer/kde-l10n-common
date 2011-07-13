@@ -1,57 +1,85 @@
 #!/usr/bin/make -f
 ###BOILERPLATE###
 
-LANGCODE=aaaKDELANGCODEbbb
-# Make revision and branch match the KDE SC version we have
-SVNREV=1227117
-BRANCH=unstable
-
-ifeq ($(BRANCH),stable)
-	export SVNURL=svn://anonsvn.kde.org/home/kde/branches/stable/l10n-kde4
+# ++ Setup && Error Handling ++ #
+ifeq ($(shell basename `pwd`),debian)
+$(error E: This must not be run from debian/)
 else
-	ifeq ($(BRANCH),unstable)
-		export SVNURL=svn://anonsvn.kde.org/home/kde/trunk/l10n-kde4
-	else
-		@echo UNKNOWN BRANCH VALUE
+	include ./debian/config
+	ifndef SVNREV
+		ERROR_CONFIG_MISSING_NAME = "SVNREV"
+	else ifndef TYPE
+		ERROR_CONFIG_MISSING_NAME = "TYPE"
+	endif
+	ifdef ERROR_CONFIG_MISSING_NAME
+$(error E: Config value for field $(ERROR_CONFIG_MISSING_NAME) missing)
 	endif
 endif
 
-get-desktop:
+ifeq ($(TYPE),stable)
+	export SVNURL=svn://anonsvn.kde.org/home/kde/branches/stable/l10n-kde4
+else
+	ifeq ($(TYPE),unstable)
+		export SVNURL=svn://anonsvn.kde.org/home/kde/trunk/l10n-kde4
+	else
+$(error E: Value of SVNURL unknown (must be stable or unstable))
+	endif
+endif
+
+# ++ L10n Fetching ++ #
+# ++++ App L10n ++++ #
+get-messages-kdepim:
+	# Fetch kdepim 4.4.5 translations
+	cd messages; \
+		svn export svn://anonsvn.kde.org/home/kde/tags/KDE/4.4.5/kde-l10n/aaaKDELANGCODEbbb/messages/kdepim/; \
+	cd ..; \
+
+get-messages: get-messages-kdepim
+
+# ++++ Desktop Files ++++ #
+get-desktop-sc:
 	# Fetch all and any desktop file pos for KDE core modules from stable
+	rev="-r${SVNREV}"; \
 	cd messages; \
 		for module in *; do \
-			if cd $${module} ; then \
-				svn export -r${SVNREV} $(SVNURL)/$(LANGCODE)/messages/$${module}/desktop_$${module}.po; \
+			args="$${rev} $(SVNURL)/aaaKDELANGCODEbbb/messages/$${module}"; \
+			if cd $${module} 2> /dev/null ; then \
+				for file in `svn ls $${args}/ | grep "desktop_.*\.po"` ; do \
+					svn export $${args}/$${file}; \
+				done; \
+				cd ..; \
 			fi; \
-			cd ..; \
 		done; \
 	cd ../..;
 
-	# These are not split in svn but are split in release tars, so copy svn file to also cover release tar file
-	-cp messages/kdebase/desktop_kdebase.po messages/kdebase/desktop_kdebase-runtime.po
-	-cp messages/kdebase/desktop_kdebase.po messages/kdebase/desktop_kdebase-workspace.po
-	-cp messages/kdepim/desktop_kdepim.po messages/kdepim/desktop_kdepim-runtime.po
-
+get-desktop-extragear:
 	# Fetch playground and extragear desktop file pos as per list from pkg-kde-tools
 	cd messages/kdelibs; \
 		for file in `cat /usr/lib/kubuntu-desktop-i18n/desktop-template-list`; do \
-			svn export -r${SVNREV} svn://anonsvn.kde.org/home/kde/trunk/l10n-kde4/$(LANGCODE)/messages/$${file}.po; \
+			svn export -r${SVNREV} svn://anonsvn.kde.org/home/kde/trunk/l10n-kde4/aaaKDELANGCODEbbb/messages/$${file}.po; \
 		done; \
 	cd ../..;
 
-get-kdepim:
-	# Fetch kdepim 4.4.5 translations
-	cd messages; \
-		svn export svn://anonsvn.kde.org/home/kde/tags/KDE/4.4.5/kde-l10n/${LANGCODE}/messages/kdepim/; \
-	cd ..;
+get-desktop-kdepim: get-messages-kdepim
+	# These are not split in svn but are split in release tars, so copy svn file to also cover release tar file
+	-cp messages/kdepim/desktop_kdepim.po messages/kdepim/desktop_kdepim-runtime.po
 
-get-l10n: get-desktop get-kdepim
+get-desktop: get-desktop-sc get-desktop-extragear get-desktop-kdepim
 
+# ++++ Meta ++++ #
+get-l10n: $(ERROR) get-messages get-desktop
+
+# L10n
+.PHONY: get-l10n
+# Messages
+.PHONY: get-messages get-messages-kdepim
+# Desktop files
+.PHONY: get-desktop  get-desktop-sc get-desktop-extragear get-desktop-kdepim
+
+# ++ Build Rules ++ #
 %:
 	dh $@ --with kde
 
 override_dh_install:
 	dh_install -i
-	rm -f debian/kde-l10n-aaaUBUNTULANGCODEbbb/usr/share/locale/$(LANGCODE)/entry.desktop
-
-.PHONY: get-desktop get-kdepim get-l10n
+	rm -f debian/kde-l10n-aaaUBUNTULANGCODEbbb/usr/share/locale/aaaKDELANGCODEbbb/entry.desktop
