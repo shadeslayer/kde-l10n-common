@@ -1,3 +1,13 @@
+kde-l10n-aaaUBUNTULANGCODEbbb (4:4.7.0-0ubuntu1) oneiric; urgency=low
+
+  * New upstream release (svn: 1242643, type: stable)
+  * Bump kdelibs deps to 4.7.0
+  * Update readme.source with new branch url
+  * Update control VCS entries with new branch url
+  * Stop getting old kdepim 4.5 translations (4.7 is now in oneiric)
+
+ -- Harald Sitter <apachelogger@ubuntu.com>  Fri, 26 Aug 2011 16:23:10 +0200
+
 kde-l10n-aaaUBUNTULANGCODEbbb (4:4.6.90-0ubuntu1) oneiric; urgency=low
 
   * Enable easy switching between stable and unstable translations

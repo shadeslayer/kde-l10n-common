@@ -5,7 +5,7 @@ When applying changes to the packaging, you must only do this via the packaging
 branch, otherwise the changes will be dropoped with the next upload based on
 the branch!
 
-https://code.launchpad.net/~kubuntu-members/kubuntu-packaging/kde-l10n-common
+https://code.launchpad.net/~kubuntu-packagers/kubuntu-packaging/kde-l10n-common
 
 == Intro ==
 This branch is designed to be the one and only common base for KDE l10n packages

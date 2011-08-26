@@ -28,13 +28,8 @@ endif
 
 # ++ L10n Fetching ++ #
 # ++++ App L10n ++++ #
-get-messages-kdepim:
-	# Fetch kdepim 4.4.5 translations
-	cd messages; \
-		svn export svn://anonsvn.kde.org/home/kde/tags/KDE/4.4.5/kde-l10n/aaaKDELANGCODEbbb/messages/kdepim/; \
-	cd ..; \
 
-get-messages: get-messages-kdepim
+get-messages:
 
 # ++++ Desktop Files ++++ #
 get-desktop-sc:
@@ -60,11 +55,7 @@ get-desktop-extragear:
 		done; \
 	cd ../..;
 
-get-desktop-kdepim: get-messages-kdepim
-	# These are not split in svn but are split in release tars, so copy svn file to also cover release tar file
-	-cp messages/kdepim/desktop_kdepim.po messages/kdepim/desktop_kdepim-runtime.po
-
-get-desktop: get-desktop-sc get-desktop-extragear get-desktop-kdepim
+get-desktop: get-desktop-sc get-desktop-extragear
 
 # ++++ Meta ++++ #
 get-l10n: $(ERROR) get-messages get-desktop
@@ -72,9 +63,9 @@ get-l10n: $(ERROR) get-messages get-desktop
 # L10n
 .PHONY: get-l10n
 # Messages
-.PHONY: get-messages get-messages-kdepim
+.PHONY: get-messages
 # Desktop files
-.PHONY: get-desktop  get-desktop-sc get-desktop-extragear get-desktop-kdepim
+.PHONY: get-desktop get-desktop-sc get-desktop-extragear
 
 # ++ Build Rules ++ #
 %:
