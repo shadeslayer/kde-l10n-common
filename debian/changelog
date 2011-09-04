@@ -1,3 +1,9 @@
+kde-l10n-aaaUBUNTULANGCODEbbb (4:4.7.1-0ubuntu1) oneiric; urgency=low
+
+  * New upstream release (svn: 1250835, type: stable)
+
+ -- Harald Sitter <apachelogger@ubuntu.com>  Sun, 04 Sep 2011 14:35:50 +0200
+
 kde-l10n-aaaUBUNTULANGCODEbbb (4:4.7.0-0ubuntu1) oneiric; urgency=low
 
   * New upstream release (svn: 1242643, type: stable)
