@@ -86,7 +86,7 @@ fi
 
 if [ -e build ]; then
   echo "A already existing build/ directory was found, which indicates that there was a build done earlier."
-  echo "Note: you can also run this script with -ncd to preserve only the tar.bz2 files from build/."
+  echo "Note: you can also run this script with -ncd to preserve only the tar.xz files from build/."
   echo "Do you REALLY REALLY want to mess with the current build dir? (y/n)"
   read -e reply
   if [[ $reply != "y" ]]; then
@@ -98,7 +98,7 @@ fi
 # clean build dir
 if [ $clean_dld -eq 0 ]; then
   find build/* -maxdepth 0 | grep -v build-area | xargs rm -rfv
-  find build/build-area/* -maxdepth 0 | grep -v ".tar.bz2" | xargs rm -rfv
+  find build/build-area/* -maxdepth 0 | grep -v ".tar.xz" | xargs rm -rfv
 else
   rm -rvf build
   mkdir build
@@ -134,20 +134,20 @@ cd build-area
 if [ $clean_dld -ne 0 ]; then
   if [[ "$subset" == "" ]]; then
     # get all
-    $GET/${TYPE}/${KDEVERSION}/src/kde-l10n/kde-l10n-*.tar.bz2 .
+    $GET/${TYPE}/${KDEVERSION}/src/kde-l10n/kde-l10n-*.tar.xz .
   else
     # only get subset
     for pkg in $subset; do
-      $GET/${TYPE}/${KDEVERSION}/src/kde-l10n/kde-l10n-$pkg-*.tar.bz2 .
+      $GET/${TYPE}/${KDEVERSION}/src/kde-l10n/kde-l10n-$pkg-*.tar.xz .
     done
   fi
 fi
 
-for tfile in `ls kde-l10n-*.tar.bz2`; do
+for tfile in `ls kde-l10n-*.tar.xz`; do
   cd $WDIR
   cd build-area
 
-  if [[ $tfile =~ kde-l10n-(.*)-$KDEVERSION.tar.bz2 ]]; then
+  if [[ $tfile =~ kde-l10n-(.*)-$KDEVERSION.tar.xz ]]; then
     kdecode=${BASH_REMATCH[1]}
 
     # set mappings
@@ -158,10 +158,10 @@ for tfile in `ls kde-l10n-*.tar.bz2`; do
     mapUbuntuNameToDep ubuntudep
 
     # remove any left overs from previous runs
-    rm -r kde-l10n-${ubuntucode}_${VERSION}.orig.tar.bz2
+    rm -r kde-l10n-${ubuntucode}_${VERSION}.orig.tar.xz
 
-    ln -s $tfile kde-l10n-${ubuntucode}_${VERSION}.orig.tar.bz2
-    tar xf kde-l10n-${ubuntucode}_${VERSION}.orig.tar.bz2
+    ln -s $tfile kde-l10n-${ubuntucode}_${VERSION}.orig.tar.xz
+    tar xf kde-l10n-${ubuntucode}_${VERSION}.orig.tar.xz
 
     i=0
     while read line; do
