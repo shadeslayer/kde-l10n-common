@@ -1,5 +1,5 @@
 # Make revision and branch match the KDE SC version we have
-SVNREV=1283253
+SVNREV=1287586
 TYPE=stable
 
 BRANCH="lp:~kubuntu-packagers/kubuntu-packaging/kde-l10n-common"
