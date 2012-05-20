@@ -1,8 +1,8 @@
-kde-l10n-aaaUBUNTULANGCODEbbb (4:4.8.3-0ubuntu0.1~ppa1) precise; urgency=low
+kde-l10n-aaaUBUNTULANGCODEbbb (4:4.8.3-0ubuntu1) quantal; urgency=low
 
-  * New upstream release (svn: 1292309, type: stable) PPA upload
+  * New upstream release (svn: 1292309, type: stable)
 
- -- Philip Muškovac <yofel@kubuntu.org>  Thu, 03 May 2012 21:27:56 +0200
+ -- Philip Muškovac <yofel@kubuntu.org>  Sun, 20 May 2012 21:21:10 +0200
 
 kde-l10n-aaaUBUNTULANGCODEbbb (4:4.8.2-0ubuntu1) precise; urgency=low
 
