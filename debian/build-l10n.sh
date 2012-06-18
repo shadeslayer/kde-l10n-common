@@ -118,6 +118,7 @@ fi
 
 mkdir build-area
 bzr branch $BRANCH $CO
+bzr branch $LANG_PACK_BRANCH $CO-langpack
 
 cd $CO
 VERSION=`dpkg-parsechangelog | sed -ne 's/^Version: \(\([0-9]\+\):\)\?\(.*\)-.*/\3/p'`
@@ -186,6 +187,28 @@ for tfile in `ls kde-l10n-*.tar.xz`; do
       sed -i "s/aaaKDELANGNAMEbbb/$kdename/g" $dfile
       sed -i "s/###BOILERPLATE###/$BOILERPLATE/g" $dfile
     done
+
+    bzr-buildpackage -S --builder "dpkg-buildpackage -S -us -uc"
+    cd ../..
+
+    bzr branch $CO-langpack language-pack-$kdecode
+
+    cd language-pack-$kdecode/debian/
+    for dfile in `ls`; do
+      sed -i "s/aaaUBUNTULANGDEPbbb/$ubuntudep/g" $dfile
+      sed -i "s/aaaUBUNTULANGCODEbbb/$ubuntucode/g" $dfile
+      sed -i "s/aaaKDELANGCODEbbb/$kdecode/g" $dfile
+      sed -i "s/aaaKDELANGNAMEbbb/$kdename/g" $dfile
+      sed -i "s/###BOILERPLATE###/$BOILERPLATE/g" $dfile
+    done
+
+    CALLIGRA=`apt-cache policy calligra-l10n-${ubuntudep}`
+    echo CALLIGRA $CALLIGRA
+    if [[ -n $CALLIGRA ]]; then 
+        echo "seding: "
+        sed -i "s/^Depends:.*/&, calligra-l10n-${ubuntudep}/" control
+        sed "s/^Depends:.*/&, calligra-l10n-${ubuntudep}/" control
+    fi
 
     bzr-buildpackage -S --builder "dpkg-buildpackage -S -us -uc"
   fi

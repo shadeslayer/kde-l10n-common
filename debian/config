@@ -1,7 +1,8 @@
 # Make revision and branch match the KDE SC version we have
-SVNREV=1292309
-TYPE=stable
+TYPE=unstable
 
 BRANCH="lp:~kubuntu-packagers/kubuntu-packaging/kde-l10n-common"
 CO="common"
 GET="scp ftpubuntu@ftpmaster.kde.org:/home/ftpubuntu"
+
+LANG_PACK_BRANCH="lp:~kubuntu-packagers/kubuntu-packaging/language-pack-kde-common"
