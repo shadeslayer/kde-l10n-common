@@ -1,76 +1,8 @@
 #!/usr/bin/make -f
 ###BOILERPLATE###
 
-# ++ Setup && Error Handling ++ #
-ifeq ($(shell basename `pwd`),debian)
-$(error E: This must not be run from debian/)
-else
-	include ./debian/config
-	ifndef SVNREV
-		ERROR_CONFIG_MISSING_NAME = "SVNREV"
-	else ifndef TYPE
-		ERROR_CONFIG_MISSING_NAME = "TYPE"
-	endif
-	ifdef ERROR_CONFIG_MISSING_NAME
-$(error E: Config value for field $(ERROR_CONFIG_MISSING_NAME) missing)
-	endif
-endif
-
-ifeq ($(TYPE),stable)
-	export SVNURL=svn://anonsvn.kde.org/home/kde/branches/stable/l10n-kde4
-else
-	ifeq ($(TYPE),unstable)
-		export SVNURL=svn://anonsvn.kde.org/home/kde/trunk/l10n-kde4
-	else
-$(error E: Value of SVNURL unknown (must be stable or unstable))
-	endif
-endif
-
-# ++ L10n Fetching ++ #
-# ++++ App L10n ++++ #
-
-get-messages:
-
-# ++++ Desktop Files ++++ #
-get-desktop-sc:
-	# Fetch all and any desktop file pos for KDE core modules from stable
-	rev="-r${SVNREV}"; \
-	cd messages; \
-		for module in *; do \
-			args="$${rev} $(SVNURL)/aaaKDELANGCODEbbb/messages/$${module}"; \
-			if cd $${module} 2> /dev/null ; then \
-				for file in `svn ls $${args}/ | grep "desktop_.*\.po"` ; do \
-					svn export $${args}/$${file}; \
-				done; \
-				cd ..; \
-			fi; \
-		done; \
-	cd ../..;
-
-get-desktop-extragear:
-	# Fetch playground and extragear desktop file pos as per list from pkg-kde-tools
-	cd messages/kdelibs; \
-		for file in `cat /usr/lib/kubuntu-desktop-i18n/desktop-template-list`; do \
-			svn export -r${SVNREV} svn://anonsvn.kde.org/home/kde/trunk/l10n-kde4/aaaKDELANGCODEbbb/messages/$${file}.po; \
-		done; \
-	cd ../..;
-
-get-desktop: get-desktop-sc get-desktop-extragear
-
-# ++++ Meta ++++ #
-get-l10n: $(ERROR) get-messages get-desktop
-
-# L10n
-.PHONY: get-l10n
-# Messages
-.PHONY: get-messages
-# Desktop files
-.PHONY: get-desktop get-desktop-sc get-desktop-extragear
-
-# ++ Build Rules ++ #
 %:
 	dh $@ --with kde
 
 override_dh_install:
 	dh_install -i
-	rm -f debian/kde-l10n-aaaUBUNTULANGCODEbbb/usr/share/locale/aaaKDELANGCODEbbb/entry.desktop
