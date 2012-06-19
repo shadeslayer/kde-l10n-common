@@ -191,7 +191,7 @@ for tfile in `ls kde-l10n-*.tar.xz`; do
     bzr-buildpackage -S --builder "dpkg-buildpackage -S -us -uc"
     cd ../..
 
-    bzr branch $CO-langpack language-pack-$kdecode
+    bzr branch $CO-langpack language-pack-kde-$kdecode
 
     cd language-pack-$kdecode/debian/
     for dfile in `ls`; do
@@ -207,7 +207,6 @@ for tfile in `ls kde-l10n-*.tar.xz`; do
     if [[ -n $CALLIGRA ]]; then 
         echo "seding: "
         sed -i "s/^Depends:.*/&, calligra-l10n-${ubuntudep}/" control
-        sed "s/^Depends:.*/&, calligra-l10n-${ubuntudep}/" control
     fi
 
     bzr-buildpackage -S --builder "dpkg-buildpackage -S -us -uc"
