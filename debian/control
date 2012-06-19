@@ -15,9 +15,7 @@ Vcs-Bzr: https://code.launchpad.net/~kubuntu-packagers/kubuntu-packaging/kde-l10
 Package: kde-l10n-aaaUBUNTULANGCODEbbb
 Architecture: all
 Depends: ${misc:Depends},
-         libkdecore5 (>= 4:4.7.0),
-         language-pack-kde-aaaUBUNTULANGDEPbbb
-Replaces: kde-i18n-aaaUBUNTULANGCODEbbb
+         libkdecore5 (>= 4:4.7.0)
 Description: aaaKDELANGNAMEbbb (aaaUBUNTULANGCODEbbb) localization for KDE
  This package contains the translation files for all KDE core applications for
  the language "aaaKDELANGNAMEbbb".
