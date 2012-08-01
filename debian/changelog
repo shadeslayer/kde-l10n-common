@@ -1,3 +1,9 @@
+kde-l10n-aaaUBUNTULANGCODEbbb (4:4.9.0-0ubuntu1) quantal; urgency=low
+
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 01 Aug 2012 12:53:57 +0100
+
 kde-l10n-aaaUBUNTULANGCODEbbb (4:4.8.90-0ubuntu1) quantal; urgency=low
 
   * New upstream beta release
