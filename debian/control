@@ -8,7 +8,7 @@ Build-Depends: debhelper (>= 7.4.13),
                cmake,
                kdelibs5-dev (>= 4:4.7.0),
                python
-Standards-Version: 3.9.2
+Standards-Version: 3.9.3
 Homepage: http://l10n.kde.org/team-infos.php?teamcode=aaaKDELANGCODEbbb
 Vcs-Browser: http://bazaar.launchpad.net/~kubuntu-packagers/kubuntu-packaging/kde-l10n-common
 Vcs-Bzr: https://code.launchpad.net/~kubuntu-packagers/kubuntu-packaging/kde-l10n-common
