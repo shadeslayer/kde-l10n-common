@@ -3,6 +3,3 @@
 
 %:
 	dh $@ --with kde --parallel
-
-override_dh_install:
-	dh_install -i
