@@ -4,6 +4,7 @@ kde-l10n-aaaUBUNTULANGCODEbbb (4:4.9.1-0ubuntu2) UNRELEASED; urgency=low
   * Compress debian tarballs with xz instead of bzip2.
   * Bump Standards-Version to 3.9.3.
   * Rename debian/config to debian/config-l10n as "config" is used by debconf.
+  * Enable parallel building.
 
  -- Felix Geyer <debfx@ubuntu.com>  Tue, 11 Sep 2012 14:23:42 +0200
 
