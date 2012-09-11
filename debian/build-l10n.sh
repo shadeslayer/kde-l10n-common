@@ -79,7 +79,7 @@ case ${WDIR##*/} in
     ;;
 esac
 
-if ! source debian/config ; then
+if ! source debian/config-l10n ; then
     echo "could not source config!!"
     exit 1
 fi
