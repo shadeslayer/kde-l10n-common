@@ -1,3 +1,9 @@
+kde-l10n-aaaUBUNTULANGCODEbbb (4:4.9.1-0ubuntu2) UNRELEASED; urgency=low
+
+  * Build-depend on python as it's required by kde-l10n-sr.
+
+ -- Felix Geyer <debfx@ubuntu.com>  Tue, 11 Sep 2012 14:23:42 +0200
+
 kde-l10n-aaaUBUNTULANGCODEbbb (4:4.9.1-0ubuntu1) quantal; urgency=low
 
   * New upstream release
