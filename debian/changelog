@@ -1,3 +1,9 @@
+kde-l10n-aaaUBUNTULANGCODEbbb (4:4.9.1-0ubuntu1) quantal; urgency=low
+
+  * New upstream release
+
+ -- Felix Geyer <debfx@ubuntu.com>  Tue, 11 Sep 2012 11:10:45 +0200
+
 kde-l10n-aaaUBUNTULANGCODEbbb (4:4.9.0-0ubuntu1) quantal; urgency=low
 
   * New upstream release
