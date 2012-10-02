@@ -1,5 +1,6 @@
-kde-l10n-aaaUBUNTULANGCODEbbb (4:4.9.1-0ubuntu2) UNRELEASED; urgency=low
+kde-l10n-aaaUBUNTULANGCODEbbb (4:4.9.2-0ubuntu1) quantal; urgency=low
 
+  [ Felix Geyer ]
   * Build-depend on python as it's required by kde-l10n-sr.
   * Compress debian tarballs with xz instead of bzip2.
   * Bump Standards-Version to 3.9.3.
@@ -7,7 +8,10 @@ kde-l10n-aaaUBUNTULANGCODEbbb (4:4.9.1-0ubuntu2) UNRELEASED; urgency=low
   * Enable parallel building.
   * Drop unneeded dh_install override.
 
- -- Felix Geyer <debfx@ubuntu.com>  Tue, 11 Sep 2012 14:23:42 +0200
+  [ Jonathan Riddell ]
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 02 Oct 2012 17:04:55 +0100
 
 kde-l10n-aaaUBUNTULANGCODEbbb (4:4.9.1-0ubuntu1) quantal; urgency=low
 
