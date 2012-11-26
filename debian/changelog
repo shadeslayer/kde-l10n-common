@@ -1,3 +1,9 @@
+kde-l10n-aaaUBUNTULANGCODEbbb (4:4.9.80-0ubuntu1) raring; urgency=low
+
+  * New upstream beta release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 26 Nov 2012 14:16:42 +0000
+
 kde-l10n-aaaUBUNTULANGCODEbbb (4:4.9.3-0ubuntu1) raring; urgency=low
 
   * New upstream release (LP: #1074747)
