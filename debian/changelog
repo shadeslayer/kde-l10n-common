@@ -1,9 +1,10 @@
-kde-l10n-aaaUBUNTULANGCODEbbb (4:4.9.90-0ubuntu2) UNRELEASED; urgency=low
+kde-l10n-aaaUBUNTULANGCODEbbb (4:4.9.95-0ubuntu1) raring; urgency=low
 
+  * New upstream release candidate
   * Add Breaks/Replaces against print-manager (<< 4:4.9.90).
     It's now part of the KDE SC.
 
- -- Philip Muškovac <yofel@kubuntu.org>  Tue, 18 Dec 2012 16:42:22 +0100
+ -- Philip Muškovac <yofel@kubuntu.org>  Sun, 23 Dec 2012 14:20:52 +0100
 
 kde-l10n-aaaUBUNTULANGCODEbbb (4:4.9.90-0ubuntu1) raring; urgency=low
 
