@@ -1,3 +1,9 @@
+kde-l10n-aaaUBUNTULANGCODEbbb (4:4.9.10-0ubuntu1) raring; urgency=low
+
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 06 Feb 2013 13:11:41 +0000
+
 kde-l10n-aaaUBUNTULANGCODEbbb (4:4.9.98-0ubuntu1) raring; urgency=low
 
   * New upstream RC
