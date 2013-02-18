@@ -50,6 +50,21 @@ function mapUbuntuNameToDep {
   esac
 }
 
+function mapKdeCodeToIbusPkg {
+  case `eval "expr \"\$"$1"\" "` in
+    "ko" )
+      eval "$1=\",ibus-hangul\"";;
+    "ja" )
+      eval "$1=\",ibus-anthy\"";;
+    "zh_CN" )
+      eval "$1=\",ibus-pinyin\"";;
+    "zh_TW" )
+      eval "$1=\",ibus-chewing\"";;
+    * )
+      eval "$1=\"\"";;
+  esac
+}
+
 clean_dld=1
 subset=""
 
@@ -157,6 +172,9 @@ for tfile in `ls kde-l10n-*.tar.xz`; do
 
     ubuntudep=$ubuntucode
     mapUbuntuNameToDep ubuntudep
+    
+    inputmethodpkg=$kdecode
+    mapKdeCodeToIbusPkg inputmethodpkg
 
     # remove any left overs from previous runs
     rm -r kde-l10n-${ubuntucode}_${VERSION}.orig.tar.xz
@@ -185,6 +203,11 @@ for tfile in `ls kde-l10n-*.tar.xz`; do
       sed -i "s/aaaUBUNTULANGCODEbbb/$ubuntucode/g" $dfile
       sed -i "s/aaaKDELANGCODEbbb/$kdecode/g" $dfile
       sed -i "s/aaaKDELANGNAMEbbb/$kdename/g" $dfile
+      if [ -z "$inputmethodpkg" ]; then
+	sed -i "/aaaINPUTMETHODPACKAGEbbb/d" $dfile
+      else
+	sed -i "s/aaaINPUTMETHODPACKAGEbbb/$inputmethodpkg/g" $dfile
+      fi
       sed -i "s/###BOILERPLATE###/$BOILERPLATE/g" $dfile
     done
 
@@ -199,6 +222,7 @@ for tfile in `ls kde-l10n-*.tar.xz`; do
       sed -i "s/aaaUBUNTULANGCODEbbb/$ubuntucode/g" $dfile
       sed -i "s/aaaKDELANGCODEbbb/$kdecode/g" $dfile
       sed -i "s/aaaKDELANGNAMEbbb/$kdename/g" $dfile
+      sed -i "s/aaaINPUTMETHODPACKAGEbbb/$inputmethodpkg/g" $dfile
       sed -i "s/###BOILERPLATE###/$BOILERPLATE/g" $dfile
     done
 
