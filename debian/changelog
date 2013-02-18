@@ -1,3 +1,9 @@
+kde-l10n-aaaUBUNTULANGCODEbbb (4:4.10.0-0ubuntu2) raring; urgency=low
+
+  * Bump with ibus input methods fixes
+
+ -- Michal Zajac <quintasan@kubuntu.org>  Mon, 18 Feb 2013 18:40:20 +0100
+
 kde-l10n-aaaUBUNTULANGCODEbbb (4:4.10.0-0ubuntu1) raring; urgency=low
 
   * New upstream release
