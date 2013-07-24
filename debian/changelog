@@ -1,3 +1,9 @@
+kde-l10n-aaaUBUNTULANGCODEbbb (4:4.10.95-0ubuntu1) saucy; urgency=low
+
+  * New upstream RC release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 24 Jul 2013 14:17:50 +0100
+
 kde-l10n-aaaUBUNTULANGCODEbbb (4:4.10.90-0ubuntu1) saucy; urgency=low
 
   * New upstream beta release
