@@ -1,3 +1,9 @@
+kde-l10n-aaaUBUNTULANGCODEbbb (4:4.11.97-0ubuntu1) trusty; urgency=low
+
+  * New upstream RC release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 28 Nov 2013 12:31:35 +0000
+
 kde-l10n-aaaUBUNTULANGCODEbbb (4:4.11.80-0ubuntu1) trusty; urgency=low
 
   * New upstream beta release 
