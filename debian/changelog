@@ -1,3 +1,9 @@
+kde-l10n-aaaUBUNTULANGCODEbbb (4:4.12.2-0ubuntu1) trusty; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Tue, 04 Feb 2014 17:13:05 +0100
+
 kde-l10n-aaaUBUNTULANGCODEbbb (4:4.12.0-0ubuntu1) trusty; urgency=low
 
   * new upstream release
