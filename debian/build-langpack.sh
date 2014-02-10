@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 clean_dld=1
 subset=""
 
@@ -35,10 +36,9 @@ if ! source debian/config-l10n ; then
 fi
 
 if ! source debian/common ; then
-    echo "could not source config!!"
+    echo "could not source common functions!!"
     exit 1
 fi
-
 
 if [ -e build ]; then
   echo "A already existing build/ directory was found, which indicates that there was a build done earlier."
@@ -49,6 +49,11 @@ if [ -e build ]; then
     echo "bye!"
     exit 0
   fi
+fi
+
+if ! source debian/config-l10n ; then
+    echo "could not source config!!"
+    exit 1
 fi
 
 # clean build dir
@@ -100,6 +105,7 @@ if [ $clean_dld -ne 0 ]; then
   fi
 fi
 
+
 for tfile in `ls kde-l10n-*.tar.xz`; do
   cd $WDIR
   cd build-area
@@ -136,21 +142,33 @@ for tfile in `ls kde-l10n-*.tar.xz`; do
 ##############################
     cd $WDIR
 
-    bzr branch $CO kde-l10n-$kdecode
+    bzr branch $CO-langpack language-pack-kde-$ubuntudep
 
-    cd kde-l10n-$kdecode/debian/
+    cd language-pack-kde-$ubuntudep/debian/
     for dfile in `ls`; do
       sed -i "s/aaaUBUNTULANGDEPbbb/$ubuntudep/g" $dfile
       sed -i "s/aaaUBUNTULANGCODEbbb/$ubuntucode/g" $dfile
       sed -i "s/aaaKDELANGCODEbbb/$kdecode/g" $dfile
       sed -i "s/aaaKDELANGNAMEbbb/$kdename/g" $dfile
-      if [ -z "$inputmethodpkg" ]; then
-	sed -i "/aaaINPUTMETHODPACKAGEbbb/d" $dfile
-      else
-	sed -i "s/aaaINPUTMETHODPACKAGEbbb/$inputmethodpkg/g" $dfile
-      fi
+      sed -i "s/aaaINPUTMETHODPACKAGEbbb/$inputmethodpkg/g" $dfile
       sed -i "s/###BOILERPLATE###/$BOILERPLATE/g" $dfile
     done
 
+    CALLIGRA=`apt-cache policy calligra-l10n-${kdecode}`
+    if [[ -n $CALLIGRA ]]; then 
+        sed -i "s/^Depends:.*/&, calligra-l10n-${kdecode}/" control
+    fi
+
+    if [[ $ubuntudep != $kdecode ]]; then
+        echo $ubuntudep NOT $kdecode
+        sed -i "s/^Depends:.*/&, kde-l10n-${ubuntucode}/" control
+
+        CALLIGRA=`apt-cache policy calligra-l10n-${ubuntucode}`
+        if [[ -n $CALLIGRA ]]; then 
+           sed -i "s/^Depends:.*/&, calligra-l10n-${ubuntucode}/" control
+        fi
+    fi
+
+    bzr-buildpackage -S --builder "dpkg-buildpackage -S -us -uc"
   fi
 done
