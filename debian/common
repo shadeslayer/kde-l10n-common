@@ -152,7 +152,7 @@ function commonSequence {
 
   BOILERPLATE="# ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! !#\n# DO NOT EVEN THINK ABOUT CHANGING THIS FILE DIRECTLY! ! ! !\n# PLEASE USE THE BZR BRANCH AS SEEN IN debian\/control\n# MAKE YOUR CHANGES THERE AND THEN RUN debian\/build-l10n.sh\n# kthxbai :)\n################################################################################\n################################################################################\n################################################################################\n################################################################################"
 
-  if [[ `bzr revno` != `bzr revno ${BRANCH}` ]]; then
+  if [[ `bzr revno` != `bzr revno ${BRANCH}` || `bzr revno` != `bzr revno ${LANG_PACK_BRANCH}` ]]; then
     echo "For one reason or another the parent branch does not match the local one, please ensure they match, or all is going down the drain."
     echo "Most importantly: YOU MUST PUSH TO THE PARENT BRANCH BEFORE BUILDING THE PACKAGES!!!"
     echo "Leaving you alone in the cold."
