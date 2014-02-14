@@ -3,3 +3,6 @@
 
 %:
 	dh $@ --with kde --parallel
+
+override_dh_gencontrol:
+	dh_gencontrol -- -Tdebian/substvars
