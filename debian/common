@@ -53,8 +53,8 @@ function mapUbuntuNameToDep {
     esac
 }
 
-echo "input method package contains ,......"
 function kdeCodeToIBusPackage {
+    echo "kdeCodeToIBusPackage $1" 
     case `eval "expr \"\$"$1"\" "` in
         "ko" )
             eval "$1=\"ibus-hangul\"";;
@@ -64,6 +64,8 @@ function kdeCodeToIBusPackage {
             eval "$1=\"ibus-pinyin\"";;
         "zh_TW" )
             eval "$1=\"ibus-chewing\"";;
+        * )
+            eval "$1=\"\"";;
     esac
 }
 

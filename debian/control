@@ -15,7 +15,7 @@ Vcs-Bzr: https://code.launchpad.net/~kubuntu-packagers/kubuntu-packaging/kde-l10
 
 Package: kde-l10n-aaaUBUNTULANGCODEbbb
 Architecture: all
-Depends: ${misc:Depends}, ${kubuntu:Deps}, libkdecore5 (>= 4:4.7.0)
+Depends: ${misc:Depends}, ${kubuntu:Depends}, libkdecore5 (>= 4:4.7.0)
 Breaks: print-manager (<< 4:4.9.90)
 Replaces: print-manager (<< 4:4.9.90)
 Description: aaaKDELANGNAMEbbb (aaaUBUNTULANGCODEbbb) localization for KDE

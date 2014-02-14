@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -x
+
 # bzr cat lp:~kubuntu-packagers/kubuntu-packaging/kde-l10n-common/debian/common &> debian/common
 # 
 if ! source debian/common ; then
@@ -53,11 +55,15 @@ fi
 # Safe even with a partial clean up.
 initBuildDirectory
 
+cd $BUILD_DIR
+CO=common
 bzr branch $BRANCH $CO
 
 cd $CO
 VERSION=`dpkg-parsechangelog | sed -ne 's/^Version: \(\([0-9]\+\):\)\?\(.*\)-.*/\3/p'`
+echo $VERSION
 if [[ ${VERSION} =~ (.*)([abcdefghijklmnopqrstuvwxyz]) ]]; then
+    echo "match"
     KDEVERSION=${BASH_REMATCH[1]}
 else
     KDEVERSION=$VERSION
@@ -113,7 +119,7 @@ for tfile in `ls kde-l10n-*.tar.xz`; do
         continue
     fi
 
-    inputmethodpkg=""
+    inputmethodpkg=$KDECODE
     kdeCodeToIBusPackage inputmethodpkg
     export ADDITIONALDEPS="$inputmethodpkg"
 
