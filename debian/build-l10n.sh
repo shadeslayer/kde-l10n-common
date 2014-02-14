@@ -1,10 +1,21 @@
 #!/bin/bash
 
-set -x
+export COMMON_BRANCH="/home/me/src/bzr/k/kubuntu-l10n-common"
+export COMMON_DIR="common-l10n"
+if [ ! -d $COMMON_DIR ]; then
+    bzr co $COMMON_BRANCH $COMMON_DIR
+else
+    wd=`pwd`
+    cd $COMMON_DIR
+    bzr up
+    cd $wd
+fi
+if [ ! -d $COMMON_DIR ]; then
+    echo "failed to get kubuntu-l10n-common, cannot continue!"
+    exit 1
+fi
 
-# bzr cat lp:~kubuntu-packagers/kubuntu-packaging/kde-l10n-common/debian/common &> debian/common
-# 
-if ! source debian/common ; then
+if ! source $COMMON_DIR/common ; then
     echo "could not source common functions!!"
     exit 1
 fi
