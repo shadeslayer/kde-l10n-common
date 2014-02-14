@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export COMMON_BRANCH="/home/me/src/bzr/k/kubuntu-l10n-common"
+export COMMON_BRANCH="lp:~kubuntu-packagers/kubuntu-packaging/kubuntu-l10n-common"
 export COMMON_DIR="common-l10n"
 if [ ! -d $COMMON_DIR ]; then
     bzr co $COMMON_BRANCH $COMMON_DIR
