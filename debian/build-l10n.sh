@@ -126,7 +126,7 @@ for tfile in `ls kde-l10n-*.tar.xz`; do
         done < kde-l10n-$KDECODE-$KDEVERSION/messages/entry.desktop
         rm -rf kde-l10n-$KDECODE-$KDEVERSION
     else
-        echo "!!! SKIPPING $tar_file BECAUSE THE VERSION COULD NOT BE PARSED!!!"
+        echo "!!! SKIPPING $tfile BECAUSE THE VERSION COULD NOT BE PARSED!!!"
         continue
     fi
 
