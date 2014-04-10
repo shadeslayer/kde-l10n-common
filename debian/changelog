@@ -1,3 +1,9 @@
+kde-l10n-aaaUBUNTULANGCODEbbb (4:4.13.0-0ubuntu1) trusty; urgency=medium
+
+  * New upstream release of KDE Software Compilation
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 10 Apr 2014 12:22:05 +0100
+
 kde-l10n-aaaUBUNTULANGCODEbbb (4:4.12.97-0ubuntu1) trusty; urgency=medium
 
   * New upstream release 
