@@ -1,4 +1,4 @@
-kde-l10n-aaaUBUNTULANGCODEbbb (4:4.13.1-0ubuntu1) trusty; urgency=medium
+kde-l10n-aaaUBUNTULANGCODEbbb (4:4.13.1-0ubuntu1) utopic; urgency=medium
 
   * New upstream release
   * Use -DLOCALE_INSTALL_DIR=/usr/share/locale-kdelibs4/ to move
