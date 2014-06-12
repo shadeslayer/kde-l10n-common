@@ -1,3 +1,9 @@
+kde-l10n-aaaUBUNTULANGCODEbbb (4:4.13.2-0ubuntu1) utopic; urgency=medium
+
+  * New upstream release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Thu, 12 Jun 2014 17:19:47 +0200
+
 kde-l10n-aaaUBUNTULANGCODEbbb (4:4.13.1-0ubuntu1) utopic; urgency=medium
 
   * New upstream release
