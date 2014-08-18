@@ -1,3 +1,9 @@
+kde-l10n-aaaUBUNTULANGCODEbbb (4:4.14.0-0ubuntu1) utopic; urgency=medium
+
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 18 Aug 2014 18:27:04 +0200
+
 kde-l10n-aaaUBUNTULANGCODEbbb (4:4.13.97-0ubuntu1) utopic; urgency=medium
 
   * RC release
