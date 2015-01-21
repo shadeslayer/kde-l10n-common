@@ -8,7 +8,7 @@ Build-Depends: debhelper (>= 7.4.13),
                cmake,
                kdelibs5-dev (>= 4:4.7.0),
                python
-Standards-Version: 3.9.3
+Standards-Version: 3.9.6
 Homepage: http://l10n.kde.org/team-infos.php?teamcode=aaaKDELANGCODEbbb
 Vcs-Browser: http://bazaar.launchpad.net/~kubuntu-packagers/kubuntu-packaging/kde-l10n-common
 Vcs-Bzr: https://code.launchpad.net/~kubuntu-packagers/kubuntu-packaging/kde-l10n-common
@@ -16,8 +16,6 @@ Vcs-Bzr: https://code.launchpad.net/~kubuntu-packagers/kubuntu-packaging/kde-l10
 Package: kde-l10n-aaaUBUNTULANGCODEbbb
 Architecture: all
 Depends: ${misc:Depends}, ${kubuntu:Depends}, libkdecore5 (>= 4:4.7.0)
-Breaks: print-manager (<< 4:4.9.90)
-Replaces: print-manager (<< 4:4.9.90)
 Description: aaaKDELANGNAMEbbb (aaaUBUNTULANGCODEbbb) localization for KDE
  This package contains the translation files for all KDE core applications for
  the language "aaaKDELANGNAMEbbb".
