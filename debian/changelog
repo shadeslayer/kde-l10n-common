@@ -1,3 +1,9 @@
+kde-l10n-aaaUBUNTULANGCODEbbb (4:14.12.1-0ubuntu1) vivid; urgency=medium
+
+  * New upstream release, first version from KDE Applications
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 21 Jan 2015 12:33:46 +0100
+
 kde-l10n-aaaUBUNTULANGCODEbbb (4:4.14.2-0ubuntu1) utopic; urgency=medium
 
   * New upstream release 
