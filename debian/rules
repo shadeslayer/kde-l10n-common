@@ -4,5 +4,8 @@
 %:
 	dh $@ --with kde --parallel
 
+override_dh_auto_configure:
+	dh_auto_configure -- -DLOCALE_INSTALL_DIR=/usr/share/locale-kdeapplications/
+
 override_dh_gencontrol:
 	dh_gencontrol -- -Tdebian/substvars

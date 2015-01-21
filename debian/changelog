@@ -1,8 +1,8 @@
 kde-l10n-aaaUBUNTULANGCODEbbb (4:14.12.1-0ubuntu1) vivid; urgency=medium
 
   * New upstream release, first version from KDE Applications
-  * Do not install into /usr/share/locale-kdelibs4/ should not overlap
-    with kf5/plasma5
+  * Install to /usr/share/locale-kdeapplications/ as it now includes
+    some kf5 apps, but it still overlaps with plasma5
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 21 Jan 2015 12:33:46 +0100
 
