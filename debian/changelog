@@ -1,4 +1,4 @@
-kde-l10n-aaaUBUNTULANGCODEbbb (4:14.12.1-0ubuntu1) vivid; urgency=medium
+kde-l10n-aaaUBUNTULANGCODEbbb (4:14.12.2-0ubuntu1) vivid; urgency=medium
 
   * New upstream release, first version from KDE Applications
   * Revert install to /usr/share/locale/
