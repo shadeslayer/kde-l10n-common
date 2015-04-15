@@ -1,3 +1,10 @@
+kde-l10n-aaaUBUNTULANGCODEbbb (4:14.12.3-0ubuntu2) vivid; urgency=medium
+
+  * Add breaks/replaces on kde-telepathy-desktop-applets for moved
+    translations LP: #1436395
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 15 Apr 2015 13:10:28 +0200
+
 kde-l10n-aaaUBUNTULANGCODEbbb (4:14.12.3-0ubuntu1) vivid; urgency=medium
 
   * New upstream release
