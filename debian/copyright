@@ -5,7 +5,7 @@ Wed, 07 Nov 2007 19:19:14 +0100.
 It was downloaded from ftp://ftp.kde.org
 
 Upstream Author:  The KDE Translation teams <kde-i18n-doc@kde.org>
-Every language file is made by the respective translation team. You can find 
+Every language file is made by the respective translation team. You can find
 a list of the translation teams and their contact email addresses at:
 http://i18n.kde.org/teams-list.php
 or directly:
@@ -118,8 +118,8 @@ or directly:
   http://l10n.kde.org/team-infos.php?teamcode=yo      Yoruba (yo) translator team
   http://l10n.kde.org/team-infos.php?teamcode=zu      Zulu (zu) translator team
 
-Copyright: 
-The copyright of every file belongs to its translators, you can check it 
+Copyright:
+The copyright of every file belongs to its translators, you can check it
 at the top of every file. In case this information is not in the file,
 you can assume it belongs to the language translator team.
 
