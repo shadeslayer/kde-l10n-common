@@ -142,6 +142,6 @@ for tfile in `ls kde-l10n-*.tar.xz`; do
         gsubDebianFile $debian_file
     done
 
-    bzr-buildpackage -S --builder "dpkg-buildpackage -S -us -uc"
+    bzr-buildpackage -S --builder "debuild -S -us -uc"
     cd ../..
 done
