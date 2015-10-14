@@ -1,7 +1,6 @@
-kde-l10n-aaaUBUNTULANGCODEbbb (4:15.08.2-0ubuntu1~ubuntu15.10~ppa1) wily; urgency=medium
+kde-l10n-aaaUBUNTULANGCODEbbb (4:15.08.2-0ubuntu1) wily; urgency=medium
 
   * New upstream release. 
-  * PPA upload.
 
  -- Scarlett Clark <sgclark@kubuntu.org>  Tue, 13 Oct 2015 15:21:40 -0700
 
