@@ -1,3 +1,9 @@
+kde-l10n-aaaUBUNTULANGCODEbbb (4:15.08.2-0ubuntu2) vivid; urgency=medium
+
+  * Vivid backport. 
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Tue, 03 Nov 2015 07:18:33 +0000
+
 kde-l10n-aaaUBUNTULANGCODEbbb (4:15.08.2-0ubuntu1) wily; urgency=medium
 
   * New upstream release. 
