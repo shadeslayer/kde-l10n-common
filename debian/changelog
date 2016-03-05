@@ -1,3 +1,9 @@
+kde-l10n-aaaUBUNTULANGCODEbbb (4:15.12.1-0ubuntu1~ubuntu16.04~ppa2) UNRELEASED; urgency=medium
+
+  * Fix series version. 
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Fri, 04 Mar 2016 22:03:27 -0800
+
 kde-l10n-aaaUBUNTULANGCODEbbb (4:15.12.1-0ubuntu1~ubuntu15.10~ppa1) xenial; urgency=medium
 
   * New upstream release. 
