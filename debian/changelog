@@ -7,22 +7,9 @@ kde-l10n-aaaUBUNTULANGCODEbbb (4:15.12.3-0ubuntu1) yakkety; urgency=medium
 
 kde-l10n-aaaUBUNTULANGCODEbbb (4:15.12.1-0ubuntu1) xenial; urgency=medium
 
-  * Release to Archive. 
-
- -- Scarlett Clark <sgclark@kubuntu.org>  Fri, 11 Mar 2016 06:34:52 -0800
-
-kde-l10n-aaaUBUNTULANGCODEbbb (4:15.12.1-0ubuntu1~ubuntu16.04~ppa2) xenial; urgency=medium
-
-  * Fix series version. 
-  * Change to xenial... 
-
- -- Scarlett Clark <sgclark@kubuntu.org>  Fri, 04 Mar 2016 22:03:27 -0800
-
-kde-l10n-aaaUBUNTULANGCODEbbb (4:15.12.1-0ubuntu1~ubuntu15.10~ppa1) xenial; urgency=medium
-
   * New upstream release. 
 
- -- Scarlett Clark <sgclark@kubuntu.org>  Fri, 04 Mar 2016 11:56:12 -0800
+ -- Scarlett Clark <sgclark@kubuntu.org>  Fri, 11 Mar 2016 06:34:52 -0800
 
 kde-l10n-aaaUBUNTULANGCODEbbb (4:15.08.3-0ubuntu2~ubuntu16.04~ppa1) xenial; urgency=medium
 
