@@ -1,3 +1,9 @@
+kde-l10n-aaaUBUNTULANGCODEbbb (4:15.12.3-0ubuntu1) xenial; urgency=medium
+
+  * Xenial backport. 
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Thu, 28 Apr 2016 15:57:11 -0700
+
 kde-l10n-aaaUBUNTULANGCODEbbb (4:15.12.3-0ubuntu1) yakkety; urgency=medium
 
   * New upstream release. 
