@@ -1,4 +1,16 @@
-kde-l10n-aaaUBUNTULANGCODEbbb (4:15.12.3-0ubuntu1.1) xenial; urgency=medium
+kdaaUBUNTULANGCODEbbb (4:15.12.3-0ubuntu1.1) xenial; urgency=medium
+
+  * Re-run translations for xenial. Closes: (LP: #1576455)
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Mon, 02 May 2016 21:11:07 -0700
+
+kde-l10n-aaaUBUNTULANGCODEbbb (4:15.12.3-0ubuntu2) yakkety; urgency=medium
+
+  * New upstream release. 
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Tue, 03 May 2016 11:08:46 -0700
+
+kde-l10n-aaaUBUNTULANGCODEbbb (4:15.12.3-0ubuntu1) xenial; urgency=medium
 
   * Re-run translations for xenial. Closes: (LP: #1576455) 
 
