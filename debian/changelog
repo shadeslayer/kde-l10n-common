@@ -1,4 +1,4 @@
-kdaaUBUNTULANGCODEbbb (4:15.12.3-0ubuntu1.1) xenial; urgency=medium
+kde-l10n-aaaUBUNTULANGCODEbbb (4:15.12.3-0ubuntu1.1) xenial; urgency=medium
 
   * Re-run translations for xenial. Closes: (LP: #1576455)
   * Clean up and branch xenial translations.
