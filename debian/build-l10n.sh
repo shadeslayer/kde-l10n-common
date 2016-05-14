@@ -72,6 +72,7 @@ CO=common
 git clone $BRANCH $CO
 
 cd $CO
+git checkout $current_branch
 VERSION=`dpkg-parsechangelog | sed -ne 's/^Version: \(\([0-9]\+\):\)\?\(.*\)-.*/\3/p'`
 echo $VERSION
 if [[ ${VERSION} =~ (.*)([abcdefghijklmnopqrstuvwxyz]) ]]; then
