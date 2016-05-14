@@ -1,5 +1,6 @@
 #!/bin/bash
 
+current_branch=$(git branch -q 2>/dev/null | grep \* | cut -f 2 -d \ )
 export COMMON_BRANCH="lp:~kubuntu-packagers/kubuntu-packaging/kubuntu-l10n-common"
 export COMMON_DIR="common-l10n"
 if [ ! -d $COMMON_DIR ]; then
@@ -138,12 +139,14 @@ for tfile in `ls kde-l10n-*.tar.xz`; do
     git clone $CO kde-l10n-$kdecode
 
     cd kde-l10n-$kdecode/debian/
+    git checkout $current_branch
     for debian_file in `ls`; do
         gsubDebianFile $debian_file
     done
+    cd ..
 
     git add debian
     git commit -am "Commit changes for build"
-    gbp buildpackage -S -us -uc
+    gbp buildpackage --git-ignore-branch -S -us -uc
     cd ../..
 done
