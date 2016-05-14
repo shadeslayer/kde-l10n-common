@@ -68,7 +68,7 @@ initBuildDirectory
 
 cd $BUILD_DIR
 CO=common
-bzr branch $BRANCH $CO
+git clone $BRANCH $CO
 
 cd $CO
 VERSION=`dpkg-parsechangelog | sed -ne 's/^Version: \(\([0-9]\+\):\)\?\(.*\)-.*/\3/p'`
@@ -135,13 +135,15 @@ for tfile in `ls kde-l10n-*.tar.xz`; do
     export ADDITIONALDEPS="$inputmethodpkg"
 
     cd $BUILD_DIR
-    bzr branch $CO kde-l10n-$kdecode
+    git clone $CO kde-l10n-$kdecode
 
     cd kde-l10n-$kdecode/debian/
     for debian_file in `ls`; do
         gsubDebianFile $debian_file
     done
 
-    bzr-buildpackage -S --builder "debuild -S -us -uc"
+    git add debian
+    git commit -am "Commit changes for build"
+    gbp buildpackage -S -us -uc
     cd ../..
 done

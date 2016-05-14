@@ -19,10 +19,12 @@ a sensible package for each available language.
 == Requirements ==
 * Packaging skillz
 * Speedy internet access
-* Access to the Ubuntu account on KTown (poke a random ninja for that)
+* Access to the Ubuntu account on depot (poke a random ninja for that)
 * bzr
 * bzr-buildpackage
 * subversion
+* git
+* git-buildpackage
 
 == General Workflow ==
 * Change
@@ -43,7 +45,7 @@ debian/rules, otherwise outdated desktop files will be merged into the package.
   debian/changelog
 * Then branches the common branch for each downloaded language and replaces
   the place holders with actual values
-* Builds a package using bzr-buildpackage
+* Builds a package using git-buildpackage
 
 Since this branch depends on source-format 3 there will not be a conversion from
 bz2 to gz, which speeds up everything quite a bit.
