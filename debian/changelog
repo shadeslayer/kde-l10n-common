@@ -1,3 +1,10 @@
+kde-l10n-aaaUBUNTULANGCODEbbb (4:15.12.3-0ubuntu3) yakkety; urgency=medium
+
+  * Added kcm_activities to overlapping-files as they are also in
+    plasma-desktop 5.6
+
+ -- Clive Johnston <clivejo@kubuntu.org>  Sat, 14 May 2016 11:40:14 +0100
+
 kde-l10n-aaaUBUNTULANGCODEbbb (4:15.12.3-0ubuntu1.1) xenial; urgency=medium
 
   * Re-run translations for xenial. Closes: (LP: #1576455)
