@@ -147,6 +147,6 @@ for tfile in `ls kde-l10n-*.tar.xz`; do
 
     git add debian
     git commit -am "Commit changes for build"
-    gbp buildpackage --git-ignore-branch -S -us -uc
+    gbp buildpackage --git-ignore-branch --git-overlay --git-export-dir=../build-area --git-tarball-dir=../build-area --git-no-create-orig -S -us -uc
     cd ../..
 done
