@@ -1,3 +1,11 @@
+kde-l10n-aaaUBUNTULANGCODEbbb (4:15.12.3-0ubuntu1~ubuntu16.04~ppa1) xenial; urgency=medium
+
+  * Added kcm_activities to overlapping-files as they are also in
+    plasma-desktop 5.6
+  * Backporting kde-l10n 15.12.3 to Xenial
+
+ -- Clive Johnston <clivejo@kubuntu.org>  Mon, 16 May 2016 23:44:28 +0100
+
 kde-l10n-aaaUBUNTULANGCODEbbb (4:15.12.3-0ubuntu1.1) xenial; urgency=medium
 
   * Re-run translations for xenial. Closes: (LP: #1576455)
