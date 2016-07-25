@@ -1,4 +1,4 @@
-kde-l10n-aaaUBUNTULANGCODEbbb (4:16.04.2-0ubuntu1~ubuntu16.10~ppa2) yakkety; urgency=medium
+kde-l10n-aaaUBUNTULANGCODEbbb (4:16.04.3-0ubuntu1~ubuntu16.10~ppa1) yakkety; urgency=medium
 
   [ Clive Johnston ]
   * New upstream release
@@ -7,6 +7,9 @@ kde-l10n-aaaUBUNTULANGCODEbbb (4:16.04.2-0ubuntu1~ubuntu16.10~ppa2) yakkety; urg
 
   [ Philip Muškovac ]
   * Remove ki18n5.js which is now in libkf5i18n-data
+
+  [ Clive Johnston ]
+  * New upstream release (16.04.3)
 
  -- Clive Johnston <clivejo@kubuntu.org>  Sat, 14 May 2016 11:40:14 +0100
 
