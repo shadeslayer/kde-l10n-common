@@ -1,3 +1,9 @@
+kde-l10n-aaaUBUNTULANGCODEbbb (4:16.08.2-0) UNRELEASED; urgency=medium
+
+  * New upstream release
+
+ -- Rohan Garg <rohan@kde.org>  Tue, 08 Nov 2016 14:50:31 +0100
+
 kde-l10n-aaaUBUNTULANGCODEbbb (4:16.04.3-0ubuntu1) yakkety; urgency=medium
 
   [ Clive Johnston ]
