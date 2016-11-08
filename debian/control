@@ -19,7 +19,7 @@ Vcs-Bzr: https://code.launchpad.net/~kubuntu-packagers/kubuntu-packaging/kde-l10
 
 Package: kde-l10n-aaaUBUNTULANGCODEbbb
 Architecture: all
-Depends: libkdecore5 (>= 4:4.7.0), ${kubuntu:Depends}, ${misc:Depends}
+Depends: libkdecore5 (>= 4:4.7.0), ${misc:Depends}
 Breaks: kde-config-telepathy-accounts (<< 15.04),
         kde-telepathy-approver (<< 15.04),
         kde-telepathy-auth-handler (<< 15.04),
