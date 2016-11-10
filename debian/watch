@@ -1,2 +1,2 @@
 version=4
-http://download.kde.org/stable/applications/@ANY_VERSION@/src/kde-l10n/kde-l10n-ca@valencia-@ANY_VERSION@.tar.xz
+http://download.kde.org/stable/applications/@ANY_VERSION@/src/kde-l10n/kde-l10n-@ORIGLANG@-@ANY_VERSION@.tar.xz
